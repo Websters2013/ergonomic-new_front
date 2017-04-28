@@ -1,0 +1,217 @@
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100%;
+  text-align: center;
+  background:  #2a2a32;
+  -webkit-transition: left 0.5s ease-in-out;
+  transition: left 0.5s ease-in-out;
+  z-index: 2;
+
+  li {
+    font-size: 14px;
+    line-height: 56px;
+    color: $main-white-color;
+    letter-spacing: 3px;
+    @include aktivegrotesk-light();
+
+    a {
+      color: $main-white-color;
+      -webkit-transition: color 300ms ease-in-out 50ms;
+      transition: color 300ms ease-in-out 50ms;
+
+      &.active,
+      &:hover{
+        color: #96c11f;
+      }
+    }
+  }
+  &_opened {
+    left: 0;
+  }
+  &__wrap {
+    padding: 120px 30px 20px;
+    background: url("../img/preloader-logo.png") no-repeat center 30px;
+
+    > ul {
+      text-align: left;
+      margin-bottom: 50px;
+    }
+  }
+  &__btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 2;
+    display: block;
+    padding: 0;
+    background: none;
+    border: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
+    span {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      right: 10px;
+      display: block;
+      height: 4px;
+      margin-top: -2px;
+      background-color: #73797e;
+      font-size: 0;
+      -webkit-transition: background-color 0.2s;
+      transition: background-color 0.2s;
+
+      &:before,
+      &:after {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #73797e;
+        -webkit-transition: -webkit-transform 0.3s;
+        transition: transform 0.3s;
+        content: '';
+      }
+      &:before {
+        -webkit-transform: translateY(-220%);
+        transform: translateY(-220%);
+      }
+      &:after {
+        -webkit-transform: translateY(220%);
+        transform: translateY(220%);
+      }
+      &_opened {
+
+        span {
+          background-color: transparent;
+        }
+        &:before {
+          -webkit-transform: translateY(0) rotate(45deg);
+          transform: translateY(0) rotate(45deg);
+        }
+        &:after {
+          -webkit-transform: translateY(0) rotate(-45deg);
+          transform: translateY(0) rotate(-45deg);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-portrait) {
+
+
+}
+
+@media (min-width: $tablet-landscape) {
+
+  .menu {
+    position: absolute;
+    top: -3px;
+    left: auto;
+    height: 146px;
+    right: 16px;
+    width: auto;
+    bottom: auto;
+    background: transparent;
+    text-align: left;
+    -webkit-transition: top 0.5s ease-in-out;
+    transition: top 0.5s ease-in-out;
+
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      color: #888888;
+      font-size: 11px;
+      margin-left: 35px;
+
+      a {
+        color: #9A9A9A;
+        font-weight: 700;
+      }
+    }
+    .btn {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    &_opened {
+      left: auto;
+    }
+    &_inner {
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      overflow-y: initial !important;
+
+      .btn_ellipse {
+        position: absolute;
+        right: 0;
+        top: -2px;
+      }
+      &.menu_fixed {
+
+        .btn_ellipse {
+          position: relative;
+          vertical-align: top;
+          border-color: #96c11f;
+          box-shadow: none;
+
+          &:hover {
+            background: #96c11f;
+            color: #fff;
+          }
+        }
+      }
+    }
+    &__wrap {
+      padding: 0;
+      background: none;
+
+      > ul {
+        display: inline-block;
+        margin: 0 25px 0 0;
+        vertical-align: middle;
+      }
+    }
+    &__btn {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+
+
+}
+
+@media (min-width: $desktop-wide) {
+
+
+}
+
+@media (min-width: $desktop-full) {
+
+  .menu {
+
+    li {
+      margin-left: 74px;
+    }
+    &__wrap {
+
+      > ul {
+        margin: 0 75px 0 0;
+      }
+    }
+  }
+}
+

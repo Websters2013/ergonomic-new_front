@@ -21,7 +21,7 @@ var paths = {
             dist: 'index.min.js',
             contains: [
                 'app/js/jquery.main.js',
-                'app/js/js/jquery.slider.js'
+                'app/js/jquery.slider.js'
             ]
         },
         {
