@@ -1,0 +1,606 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="description" content="We are a web agency based in Brussels. Our passion drives us to create crafted website and amazing marketing campaign.">
+    <link href="https://plus.google.com/110588193653496813331" rel="publisher" />
+
+    <title>OanDB</title>
+    <style>
+        .preloader{
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 3;
+        }
+        .preloader:after,
+        .preloader:before{
+            z-index: 1;
+            position: absolute;
+            background: #fff;
+            content: '';
+            width: 51%;
+            top: 0;
+            bottom: 0;
+            -webkit-transition: width 500ms ease-in-out;
+            transition: width 500ms ease-in-out;
+        }
+        .preloader:after{
+            left: 0;
+        }
+        .preloader:before{
+            right: 0;
+        }
+        .preloader_loaded:after,
+        .preloader_loaded:before{
+            width: 0;
+        }
+        .preloader > div {
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 200px;
+            height: 200px;
+            margin: -100px 0 0 -100px;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            z-index: 2;
+            -webkit-transition: opacity 500ms ease-in-out;
+            transition: opacity 500ms ease-in-out;
+        }
+
+        .preloader_loaded > div {
+            opacity: 0;
+        }
+
+        .preloader > div canvas {
+            top: -2px;
+            left: -2px;
+            position: relative;
+        }
+
+        .preloader > img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -30px 0 0 -52px;
+            z-index: 3;
+            -webkit-transition: opacity 500ms ease-in-out;
+            transition: opacity 500ms ease-in-out;
+        }
+        .preloader_loaded > img,
+        .preloader_loaded > div{
+            opacity: 0;
+        }
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+        @keyframes  spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes spin-reverse {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(-360deg);
+            }
+        }
+        @keyframes  spin-reverse {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(-360deg);
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/inner-paralax.css?v=2" />
+    <link rel="stylesheet" href="css/animated-headlines.css" />
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-21128266-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+</head>
+<body>
+
+<!-- site -->
+<div class="site site_bg-people" style="background: url(pic/header-bg-people.jpg) top center no-repeat, #307bf7;">
+
+    <!-- popup-video -->
+    <div class="popup-video">
+
+        <div class="centering">
+
+            <div>
+
+                <div>
+
+                    <!-- popup-video__inner -->
+                    <div class="popup-video__inner"></div>
+                    <!-- /popup-video__inner -->
+
+                    <!-- popup-video__close -->
+                    <a href="#" class="popup-video__close">CLOSE</a>
+                    <!-- /popup-video__close -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /popup-video -->
+
+    <!-- site__header -->
+    <header class="site__header site__header_no-bg site__header_type-2">
+
+        <!-- site__header-wrap -->
+        <div class="site__header-wrap">
+
+            <!-- logo -->
+            <a href="index.html" class="logo">
+                <img src="img/logo-white.png" width="104" height="60"/>
+            </a>
+            <!-- /logo -->
+
+            <nav class="menu menu_inner no-action">
+
+                <!-- menu__wrap -->
+                <div class="menu__wrap">
+                    <ul>
+                        <li>
+                            <a href="what_we_do.html" class="">Services</a>
+                        </li>
+                        <li>
+                            <a href="showcase.html" class="active">work</a>
+                        </li>
+                        <li>
+                            <a href="who_we_are.html" class="">Team</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="">Contact</a>
+                        </li>
+                    </ul>
+                    <a href="launch_a_project.html" class="btn btn_ellipse btn_ellipse-shadow "><span>Launch A Project</span></a>
+                </div>
+                <!-- menu__wrap -->
+
+            </nav>
+            <!-- /menu -->
+
+        </div>
+        <!-- /site__header-wrap -->
+
+        <!-- site__header-title -->
+        <div class="site__header-title">
+            <h2>Organisation & Booking Event
+                <span>O&amp;B offers an all-inclusive platform for event organisation</span>
+            </h2>
+        </div>
+        <!-- /site__header-title -->
+
+    </header>
+    <!-- /site__header -->
+
+    <!-- site__content -->
+    <div class="site__content">
+
+        <!-- our-projects -->
+        <div class="our-projects">
+
+            <!-- our-projects__wrap -->
+            <div class="our-projects__wrap">
+
+                <!-- our-projects__inner -->
+                <div class="our-projects__inner">
+
+                    <!-- slider -->
+                    <div class="slider">
+
+                        <!-- slider__wrap -->
+                        <div class="slider__wrap">
+
+                            <!-- slider__item -->
+                            <div class="slider__item">
+                                <img src="pic/header-slide_1.jpg" alt="slide">
+                            </div>
+                            <!-- /slider__item -->
+
+                            <!-- slider__item -->
+                            <div class="slider__item">
+                                <img src="pic/header-slide_2.jpg" alt="slide">
+                            </div>
+                            <!-- /slider__item -->
+
+                            <!-- slider__item -->
+                            <div class="slider__item">
+                                <img src="pic/header-slide_3.jpg" alt="slide">
+                            </div>
+                            <!-- /slider__item -->
+
+                            <!-- slider__item -->
+                            <div class="slider__item">
+                                <img src="pic/header-slide_4.jpg" alt="slide">
+                            </div>
+                            <!-- /slider__item -->
+
+                            <!-- slider__item -->
+                            <div class="slider__item">
+                                <img src="pic/header-slide_5.jpg" alt="slide">
+                            </div>
+                            <!-- /slider__item -->
+
+                        </div>
+                        <!-- /slider__wrap -->
+
+                    </div>
+                    <!-- /slider -->
+
+                </div>
+                <!-- /our-projects__inner -->
+
+            </div>
+            <!-- /our-projects__wrap -->
+
+        </div>
+        <!-- /our-projects -->
+
+        <!-- facilities -->
+        <div class="facilities">
+
+            <!-- facilities__items -->
+            <div class="facilities__items">
+                <div>
+                    <div class="facilities__ob-screen dapper dapper_left">
+                        <img src="pic/ob-screen.jpg" width="745" height="590" alt=""/>
+                    </div>
+                </div>
+                <div>
+                    <div class="facilities__text">
+                        <img src="pic/facilities1.png" width="46" height="46" alt=""/>
+                        <h2>Project Conceptualisation</h2>
+                        <ul>
+                            <li>Business model building</li>
+                            <li>Viability of the project</li>
+                            <li>Plan an auto-generated platform</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /facilities__items -->
+
+            <!-- facilities__items -->
+            <div class="facilities__items">
+                <div>
+                    <div class="facilities__text">
+                        <img src="pic/facilities2.png" width="42" height="42" alt=""/>
+                        <h2>Brand Building</h2>
+                        <ul>
+                            <li>Logo creation</li>
+                            <li>Brand attribute</li>
+                            <li>Recognition</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="facilities__grid-logo dapper dapper_right">
+                        <img src="pic/grid-logo.png" width="402" height="500" alt=""/>
+                    </div>
+                </div>
+            </div>
+            <!-- /branding-identity__items -->
+
+        </div>
+        <!-- /facilities -->
+
+        <!-- ob-services -->
+        <div class = "ob-services">
+
+            <!-- ob-services__book -->
+            <div class="ob-services__book">
+
+                <!-- paralax -->
+                <div class="paralax">
+                    <img src="img/ob-services__book.png" width="582" height="461" alt="O&amp;B" data-dictance="-200">
+                </div>
+                <!-- /paralax -->
+
+            </div>
+            <!-- /ob-services__book -->
+
+            <img src="pic/ob-services1.png" width="93" height="77" alt=""/>
+            <h2>All-Inclusive Event Platform Development</h2>
+            <dl class="tabs">
+                <dt class="active"><span>Event creation</span></dt>
+                <dd>
+
+                    <!-- ob-services__screen -->
+                    <div class = "ob-services__screen">
+                        <div>
+                            <img src="pic/screen1.jpg" width="988" height="566" alt=""/>
+                        </div>
+                    </div>
+                    <!-- /ob-services__screen -->
+
+                </dd>
+                <dt><span>Tickets management</span></dt>
+                <dd>
+
+                    <!-- ob-services__screen -->
+                    <div class = "ob-services__screen">
+                        <div>
+                            <img src="pic/screen2.jpg" width="988" height="566" alt=""/>
+                        </div>
+                    </div>
+                    <!-- /ob-services__screen -->
+
+                </dd>
+                <dt><span>Auto-online payment system between parties</span></dt>
+                <dd>
+
+                    <!-- ob-services__screen -->
+                    <div class = "ob-services__screen">
+                        <div>
+                            <img src="pic/screen3.jpg" width="988" height="566" alt=""/>
+                        </div>
+                    </div>
+                    <!-- /ob-services__screen -->
+
+                </dd>
+            </dl>
+
+            <!-- ob-services__txt -->
+            <div class="ob-services__txt">
+
+                <p>
+                    <strong>O&amp;B wanted to provide on all inclusive platform to
+                        organise any kind of event. Different platform already exist such as Facebook to create your event or event bride to manage your tickets.</strong>
+                </p>
+                <p>Therefore, the challenge was to merge all those type of existing service and harmonize them in a intuitive and reponsive
+                    web platform.</p>
+                <p>One of the big developement challenge was to create on
+                    automatic online payment system that let the founders of the
+                    platform focus on their business developement rather than being on intermediary between organizers and service providers.</p>
+
+            </div>
+            <!-- /ob-services__txt -->
+
+            <img src="pic/ob-services2.png" width="74" height="96" alt=""/>
+
+            <h2>Launching & Digital Marketing Plan</h2>
+
+            <!-- ob-services__plan -->
+            <ul class="ob-services__plan">
+
+                <li>
+                    <span>Content stategy on social media</span>
+                </li>
+                <li>
+                    <span>Creation of promotional video</span>
+                </li>
+                <li>
+                    <span>Viral Marketing</span>
+                </li>
+
+            </ul>
+            <!-- /ob-services__plan -->
+
+        </div>
+        <!-- /ob-services -->
+
+        <!-- play-teaser -->
+        <a href="#" class="play-teaser" data-video='<iframe width="560" height="315" src="https://www.youtube.com/embed/sQng2vE9aWM" frameborder="0" allowfullscreen></iframe>'>
+            <span>Play Teaser</span>
+        </a>
+        <!-- /play-teaser -->
+
+        <!--ob-vision-->
+        <div class="ob-vision">
+
+            <!--ob-vision__inner-->
+            <div class="ob-vision__inner">
+
+                <!--ob-vision__pic-->
+                <div class="ob-vision__pic dapper dapper_left">
+                    <img src="img/i-devices.png">
+                </div>
+                <!--/ob-vision__pic-->
+
+                <!--ob-vision__info-->
+                <div class="ob-vision__info">
+
+                    <span>The vision of O&amp;B is to create an online
+                        tool to organise all kind of event
+                        around the globe. </span>
+
+                    <p>
+                        We decided to start our action plan in 3 cities: Brussels,
+                        Montpelier, Toulouse. The first part of the plan is to create a beta version to register all service providers in the 3 chosen cities.
+                        The second phase is to reach the organisers by providing
+                        them a ressourcefull platform of services providers.
+                    </p>
+
+                    <p>
+                        We used all marketing tools such as promotional video, social media, blog posting to follow this 2 step in our launching plan.
+                    </p>
+
+                    <!--btn-->
+                    <a href="http://www.oandb.eu/" target="_blank" class="btn btn_purple">
+                        <span>O&amp;B Website</span>
+                    </a>
+                    <!--/btn-->
+
+                </div>
+                <!--/ob-vision__info-->
+
+            </div>
+            <!--/ob-vision__inner-->
+
+            <!--ob-vision__quote-->
+            <div class="ob-vision__quote">
+
+                <span>Turn ambition into reality, this is what Ergonomic has done for us! </span>
+                Professionalism, advices, fun and above all an amazing human adventure.
+
+                <div>
+                    <span>Vincent Santacruz</span>, Co-Founder of O&amp;B
+                </div>
+
+            </div>
+            <!--/ob-vision__quote-->
+
+        </div>
+        <!--/ob-vision-->
+
+        <!-- join-project -->
+        <div class="join-project">
+
+            <!-- join-project__now -->
+            <div class="join-project__now">
+                <h2>You like what you see?</h2>
+                <a href="launch_a_project.html" class="btn btn_white"><span>Launch A Project</span></a>
+            </div>
+            <!-- /join-project__now -->
+
+            <!-- treasury -->
+            <section class="treasury treasury_other">
+
+                <!-- treasury__grid -->
+                <div class="treasury__grid">
+                    <div>
+                        <div class="treasury__grid-card" style="background-image: url(pic/treasury.jpg);">
+                            <div style="background: rgba(233, 56, 56, .8)">
+                                <a href="we_invest-case.html"><span>View case study</span></a>
+                            </div>
+                            <div class="treasury__grid-title">
+                                <h2>We Invest</h2>
+                                <span>The human<span> agency</span></span>
+                            </div>
+                        </div>
+                        <div class="treasury__grid-card" style="background-image: url(pic/whatwedo.jpg);">
+                            <div style="background: rgba(42, 42, 50, .8)">
+
+                                <a href="what_we_do.html"><span>What we do</span></a>
+                            </div>
+                            <div class="treasury__grid-title">
+                                <h2>What we do</h2>
+                                <span>Team of professionals. <span>We’re conquering the world</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /treasury__grid -->
+
+            </section>
+            <!-- /treasury -->
+
+        </div>
+        <!-- /join-project-->
+
+    </div>
+    <!-- /site__content -->
+
+    <!-- site__footer -->
+    <footer class="site__footer">
+
+        <!-- site__footer-wrap -->
+        <div class="site__footer-wrap">
+            <!-- site__footer-address -->
+            <address class="site__footer-address">
+                Rue ransbeek, 230
+                <span>1120 Neder-Over-Heembeek, Belgium</span>
+            </address>
+            <!-- /site__footer-address -->
+
+            <!-- site__footer-social -->
+            <div class="site__footer-social">
+                <a href="#" class="in"><span></span></a>
+                <a href="#" class="t"><span></span></a>
+                <a href="#" class="f"><span></span></a>
+            </div>
+            <!-- /site__footer-social -->
+
+            <a href="launch_a_project.html" class="btn"><span>Let’s Work Together</span></a>
+
+            <!-- site__footer-copyright -->
+            <div class="site__footer-copyright">© 2016 <span>Ergonomic</span></div>
+            <!-- /site__footer-copyright -->
+        </div>
+        <!-- /site__footer-wrap -->
+
+    </footer>
+    <!-- /site__footer -->
+
+</div>
+<!-- /site -->
+
+<!-- preloader -->
+<div class="preloader">
+    <div></div>
+    <img src="img/preloader-logo.png" alt="Preloader" width="104" height="60"/>
+</div>
+<!-- /preloader -->
+
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/jquery.hammer.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=false"></script>
+
+
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/jquery.slider.js"></script>
+<script src="js/jquery.example.js"></script>
+<script src="js/jquery.paralax.js"></script>
+<script src="js/jquery.gallery.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/jquery.inner-paralax.js"></script>
+<script src="js/animated-headline.js"></script>
+
+
+
+<script type="application/ld+json">
+{
+     "@context" : "http://schema.org",
+     "@type" : "Organization",
+     "name" : "Ergonomic",
+     "url" : "https://ergonomic.be",
+     "sameAs" : [
+       "https://twitter.com/ergonomicagency",
+       "https://plus.google.com/110588193653496813331",
+       "https://www.facebook.com/Ergonomic-216716385093502/",
+       "http://fr.yelp.be/biz/ergonomic-bruxelles"
+    ]
+}
+</script>
+
+</body>
+</html>
