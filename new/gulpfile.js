@@ -37,6 +37,63 @@ var paths = {
             contains: [
                 'app/js/jquery.bobup.js'
             ]
+        },
+        {
+            dist: 'new-weinvest-case.min.js',
+            contains: [
+                'app/js/jquery.inner-paralax.js',
+                'app/js/jquery.pic-example.js'
+            ]
+        },
+        {
+            dist: 'weinvest-case.min.js',
+            contains: [
+                'app/js/jquery.inner-paralax.js',
+                'app/js/jquery.paralax.js'
+            ]
+        },
+        {
+            dist: 'oandb-case.min.js',
+            contains: [
+                'app/js/jquery.inner-paralax.js',
+                'app/js/jquery.paralax.js',
+                'app/js/jquery.slider.js'
+            ]
+        },
+        {
+            dist: 'contact.min.js',
+            contains: [
+                'app/js/jquery.inner-paralax.js'
+            ]
+        },
+        {
+            dist: 'launch-a-project.min.js',
+            contains: [
+                'app/js/jquery.inner-paralax.js',
+                'app/js/jquery.paralax.js'
+            ]
+        },
+        {
+            dist: 'showcase.min.js',
+            contains: [
+                'app/js/jquery.inner-paralax.js'
+            ]
+        },
+        {
+            dist: 'what-we-do.min.js',
+            contains: [
+                'app/js/jquery.example.js',
+                'app/js/jquery.paralax.js',
+                'app/js/jquery.inner-paralax.js'
+            ]
+        },
+        {
+            dist: 'who-we-are.min.js',
+            contains: [
+                'app/js/jquery.paralax.js',
+                'app/js/jquery.gallery.js',
+                'app/js/jquery.inner-paralax.js'
+            ]
         }
     ],
     vendorScripts: 'app/js/vendors/**/*.js',
