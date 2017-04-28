@@ -1,30 +1,59 @@
 //fonts
-@mixin main-font1() {
-  font-family: "gotham-medium", sans-serif;
+@mixin proxima-regular() {
+  font-family: "proximanova-regular", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-@mixin main-font2() {
-  font-family: "gotham-light", sans-serif;
+@mixin proxima-thin() {
+  font-family: "proximanova-thin", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-@mixin main-font3() {
-  font-family: "gotham-bold", sans-serif;
+@mixin proxima-light() {
+  font-family: "proximanova-light", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-@mixin main-font4() {
-  font-family: "gotham-book", sans-serif;
+@mixin proxima-semibold() {
+  font-family: "proximanova-semibold", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-@mixin main-font5() {
-  font-family: "gotham-light_italic", sans-serif;
+@mixin proxima-bold() {
+  font-family: "proximanova-bold", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-
+@mixin museo100() {
+  font-family: "museo100", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@mixin museo300() {
+  font-family: "museo300", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@mixin museo500() {
+  font-family: "museo500", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@mixin aktivegrotesk-regular() {
+  font-family: "aktivgrotesk-regular", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@mixin aktivegrotesk-light() {
+  font-family: "aktivgrotesk-light", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@mixin aktivegrotesk-bold() {
+  font-family: "aktivgrotesk-bold", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 //justify
 @mixin justify() {
