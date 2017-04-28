@@ -1,0 +1,432 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="description" content="We are a web agency based in Brussels. Our passion drives us to create crafted website and amazing marketing campaign.">
+    <link href="https://plus.google.com/110588193653496813331" rel="publisher" />
+
+    <title>What_We_Do</title>
+    <style>
+        .preloader{
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 3;
+        }
+        .preloader:after,
+        .preloader:before{
+            z-index: 1;
+            position: absolute;
+            background: #fff;
+            content: '';
+            width: 51%;
+            top: 0;
+            bottom: 0;
+            -webkit-transition: width 500ms ease-in-out;
+            transition: width 500ms ease-in-out;
+        }
+        .preloader:after{
+            left: 0;
+        }
+        .preloader:before{
+            right: 0;
+        }
+        .preloader_loaded:after,
+        .preloader_loaded:before{
+            width: 0;
+        }
+        .preloader > div {
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 200px;
+            height: 200px;
+            margin: -100px 0 0 -100px;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            z-index: 2;
+            -webkit-transition: opacity 500ms ease-in-out;
+            transition: opacity 500ms ease-in-out;
+        }
+
+        .preloader_loaded > div {
+            opacity: 0;
+        }
+
+        .preloader > div canvas {
+            top: -2px;
+            left: -2px;
+            position: relative;
+        }
+
+        .preloader > img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -30px 0 0 -52px;
+            z-index: 3;
+            -webkit-transition: opacity 500ms ease-in-out;
+            transition: opacity 500ms ease-in-out;
+        }
+        .preloader_loaded > img,
+        .preloader_loaded > div{
+            opacity: 0;
+        }
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+        @keyframes  spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes spin-reverse {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(-360deg);
+            }
+        }
+        @keyframes  spin-reverse {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(-360deg);
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="css/inner-paralax.css?v=2" />
+    <link rel="stylesheet" href="css/select.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-21128266-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+</head>
+<body>
+
+<!-- site -->
+<div class="site">
+
+    <!-- site__header -->
+    <header class="site__header " style="background-image: url(pic/header-paralax.jpg)">
+
+        <!-- site__header-wrap -->
+        <div class="site__header-wrap">
+
+            <!-- logo -->
+            <a href="/" class="logo">
+                <img src="img/logo-white.png" alt=""/>
+            </a>
+            <!-- /logo -->
+
+            <nav class="menu menu_inner">
+
+                <!-- menu__wrap -->
+                <div class="menu__wrap">
+                    <ul>
+                        <li>
+                            <a href="what_we_do.html" class="active">Services</a>
+                        </li>
+                        <li>
+                            <a href="showcase.html" class="">work</a>
+                        </li>
+                        <li>
+                            <a href="who_we_are.html" class="">Team</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="">Contact</a>
+                        </li>
+                    </ul>
+                    <a href="launch_a_project.html" class="btn btn_ellipse btn_ellipse-shadow "><span>Launch A Project</span></a>
+                </div>
+                <!-- menu__wrap -->
+
+            </nav>
+            <!-- /menu -->
+
+        </div>
+        <!-- /site__header-wrap -->
+
+        <!-- site__header-title -->
+        <div class="site__header-title">
+            <h2>Full Service Agency
+                <span>Designing your identity for the future</span>
+            </h2>
+        </div>
+        <!-- /site__header-title -->
+
+    </header>
+    <!-- /site__header -->
+
+    <!-- site__content -->
+    <div class="site__content">
+        <!-- work -->
+        <section class="work">
+
+            <!-- work__title -->
+            <h1 class="work__title">
+                What We Do
+                <span>Empowering your business look</span>
+            </h1>
+            <!-- /work__title -->
+
+            <!-- work__content -->
+            <div class="work__content">
+                <div>
+                    <!-- work__example -->
+                    <div class="work__example">
+                        <div>
+                            <img src="img/iphone_new.png" alt="">
+                            <img src="img/work-phone.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- /work__example -->
+                </div>
+                <div>
+
+                    <!-- work__info -->
+                    <div class="work__info">
+                        <h2>Tailor Made Website</h2>
+                        <p>We create fully customized websites, starting from scratch and thinking about your goals.
+                            Our sites are suitable for all screens, referred optimal way and developed considerably
+                            thinking about SEO.</p>
+                        <ol>
+                            <li>Web Design</li>
+                            <li>Front/Back-end Development</li>
+                            <li>Web App Design</li>
+                        </ol>
+                    </div>
+                    <!-- /work__info -->
+
+                </div>
+            </div>
+            <!-- /work__content -->
+
+        </section>
+        <!-- /work -->
+
+        <!-- e-marketing -->
+        <section class="e-marketing triangle">
+
+            <!-- e-marketing__wrap -->
+            <div class="e-marketing__wrap">
+
+                <!-- e-marketing__info -->
+                <div class="e-marketing__info">
+                    <h2>E-Marketing</h2>
+                    <p>We create online and offline campaigns that allow you to convey your vision to attract more
+                        audience and better know it. Together we achieve your goals.</p>
+                    <ol>
+                        <li>Market Analysis</li>
+                        <li>Target Group</li>
+                        <li>Advertising</li>
+                    </ol>
+                </div>
+                <!-- /e-marketing__info -->
+
+            </div>
+            <!-- /e-marketing__wrap -->
+
+            <!-- paralax -->
+            <div class="paralax">
+                <img src="img/paralax2.png" data-dictance='50' alt=""/>
+                <img src="img/paralax3.png" data-dictance='100' alt=""/>
+                <img src="img/paralax1.png" data-dictance='-200' alt=""/>
+            </div>
+            <!-- /paralax -->
+
+        </section>
+        <!-- /e-marketing -->
+
+        <!-- branding -->
+        <section class="branding triangle">
+
+            <!-- branding__wrap -->
+            <div class="branding__wrap">
+
+                <!-- branding__info -->
+                <div class="branding__info">
+                    <h2>Branding Identity</h2>
+                    <p>The image of a project is fundamental.
+                        A great brand is made from a mixture of passion, intelligence and commitment. We know its
+                        importance and strive to create strong and recognizable brands.</p>
+                    <ol>
+                        <li>Brand Attributes</li>
+                        <li>Identity</li>
+                        <li>Recognition</li>
+                    </ol>
+                </div>
+                <!-- /branding__info -->
+
+            </div>
+            <!-- /branding__wrap -->
+
+            <!-- paralax -->
+            <div class="paralax">
+                <img src="img/paralax5.png" data-dictance='50' alt=""/>
+                <img src="img/paralax4.png" data-dictance='100' alt=""/>
+                <img src="img/paralax6.png" data-dictance='-200' alt=""/>
+            </div>
+            <!-- /paralax -->
+
+        </section>
+        <!-- /branding -->
+
+        <!-- process -->
+        <section class="process triangle">
+
+            <!-- process__title -->
+            <h2 class="process__title">The Process</h2>
+            <!-- /process__title -->
+
+            <!-- process__items -->
+            <ul class="process__items">
+                <li>
+                    <div><span>Brainstorming.</span></div>
+                </li>
+                <li>
+                    <div><span>Prototyping.</span></div>
+                </li>
+                <li>
+                    <div><span>Realisation.</span></div>
+                </li>
+            </ul>
+            <!-- /process__items -->
+
+        </section>
+        <!-- /process -->
+
+        <!-- treasury -->
+        <section class="treasury treasury_other">
+
+            <!-- treasury__grid -->
+            <div class="treasury__grid">
+                <div>
+                    <div class="treasury__grid-card" style="background-image: url(pic/treasury2.jpg);">
+                        <div style="background: rgba(28, 123, 248, .8)">
+
+                            <a href="oandb.html"><span>View case study</span></a>
+                        </div>
+                        <div class="treasury__grid-title">
+                            <h2>O&amp;B</h2>
+                            <span>Your event platform. <span>All Inclusive</span></span>
+                        </div>
+                    </div>
+                    <div class="treasury__grid-card" style="background-image: url(pic/whoweare.jpg);">
+                        <div style="background: rgba(42, 42, 50, .8)">
+
+                            <a href="who_we_are.html"><span>Who We Are</span></a>
+                        </div>
+                        <div class="treasury__grid-title">
+                            <h2>Who we are</h2>
+                            <span>Team of professionals. <span>We’re conquering the world</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /treasury__grid -->
+
+        </section>
+        <!-- /treasury -->
+    </div>
+    <!-- /site__content -->
+
+    <!-- site__footer -->
+    <footer class="site__footer">
+
+        <!-- site__footer-wrap -->
+        <div class="site__footer-wrap">
+            <!-- site__footer-address -->
+            <address class="site__footer-address">
+                Rue ransbeek, 230
+                <span>1120 Neder-Over-Heembeek, Belgium</span>
+            </address>
+            <!-- /site__footer-address -->
+
+            <!-- site__footer-social -->
+            <div class="site__footer-social">
+                <a href="https://www.linkedin.com/company/2517446" target="_blank" class="in"><span></span></a>
+                <a href="https://twitter.com/ergonomicagency" target="_blank" class="t"><span></span></a>
+                <a href="https://www.facebook.com/pages/Ergonomic/216716385093502" target="_blank" class="f"><span></span></a>
+            </div>
+            <!-- /site__footer-social -->
+
+            <a href="launch_a_project.html" class="btn btn_ellipse btn_ellipse-green"><span>Let’s Work Together</span></a>
+
+            <!-- site__footer-copyright -->
+            <div class="site__footer-copyright">© 2016 <span>Ergonomic</span></div>
+            <!-- /site__footer-copyright -->
+        </div>
+        <!-- /site__footer-wrap -->
+
+    </footer>
+    <!-- /site__footer -->
+
+</div>
+<!-- /site -->
+
+<!-- preloader -->
+<div class="preloader">
+    <div></div>
+    <img src="img/preloader-logo.png" alt="Preloader" width="104" height="60"/>
+</div>
+<!-- /preloader -->
+
+
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/hammer.min.js"></script>
+
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/jquery.slider.js"></script>
+<script src="js/jquery.example.js"></script>
+<script src="js/jquery.paralax.js"></script>
+<script src="js/jquery.gallery.js"></script>
+<script src="js/jquery.inner-paralax.js"></script>
+
+
+<script type="application/ld+json">
+    {
+         "@context" : "http://schema.org",
+         "@type" : "Organization",
+         "name" : "Ergonomic",
+         "url" : "https://ergonomic.be",
+         "sameAs" : [
+           "https://twitter.com/ergonomicagency",
+           "https://plus.google.com/110588193653496813331",
+           "https://www.facebook.com/Ergonomic-216716385093502/",
+           "http://fr.yelp.be/biz/ergonomic-bruxelles"
+        ]
+    }
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,501 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="description" content="We are a web agency based in Brussels. Our passion drives us to create crafted website and amazing marketing campaign.">
+    <link href="https://plus.google.com/110588193653496813331" rel="publisher" />
+
+    <title>Who_We_Are</title>
+    <style>
+        .preloader{
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 3;
+        }
+        .preloader:after,
+        .preloader:before{
+            z-index: 1;
+            position: absolute;
+            background: #fff;
+            content: '';
+            width: 51%;
+            top: 0;
+            bottom: 0;
+            -webkit-transition: width 500ms ease-in-out;
+            transition: width 500ms ease-in-out;
+        }
+        .preloader:after{
+            left: 0;
+        }
+        .preloader:before{
+            right: 0;
+        }
+        .preloader_loaded:after,
+        .preloader_loaded:before{
+            width: 0;
+        }
+        .preloader > div {
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 200px;
+            height: 200px;
+            margin: -100px 0 0 -100px;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            z-index: 2;
+            -webkit-transition: opacity 500ms ease-in-out;
+            transition: opacity 500ms ease-in-out;
+        }
+
+        .preloader_loaded > div {
+            opacity: 0;
+        }
+
+        .preloader > div canvas {
+            top: -2px;
+            left: -2px;
+            position: relative;
+        }
+
+        .preloader > img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -30px 0 0 -52px;
+            z-index: 3;
+            -webkit-transition: opacity 500ms ease-in-out;
+            transition: opacity 500ms ease-in-out;
+        }
+        .preloader_loaded > img,
+        .preloader_loaded > div{
+            opacity: 0;
+        }
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+        @keyframes  spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes spin-reverse {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(-360deg);
+            }
+        }
+        @keyframes  spin-reverse {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(-360deg);
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="css/inner-paralax.css?v=2" />
+    <link rel="stylesheet" href="css/select.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-21128266-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+</head>
+<body>
+
+<!-- site -->
+<div class="site">
+
+    <!-- site__header -->
+    <header class="site__header site__header_green" style="background-image: url(pic/header-bg-hands.jpg)">
+
+        <!-- site__header-wrap -->
+        <div class="site__header-wrap">
+
+            <!-- logo -->
+            <a href="/" class="logo">
+                <img src="img/logo-white.png" alt=""/>
+            </a>
+            <!-- /logo -->
+
+            <nav class="menu menu_inner">
+
+                <!-- menu__wrap -->
+                <div class="menu__wrap">
+                    <ul>
+                        <li>
+                            <a href="what_we_do.html" class="">Services</a>
+                        </li>
+                        <li>
+                            <a href="showcase.html" class="">work</a>
+                        </li>
+                        <li>
+                            <a href="who_we_are.html" class="active">Team</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="">Contact</a>
+                        </li>
+                    </ul>
+                    <a href="launch_a_project.html" class="btn btn_ellipse btn_ellipse-shadow "><span>Launch A Project</span></a>
+                </div>
+                <!-- menu__wrap -->
+
+            </nav>
+            <!-- /menu -->
+
+        </div>
+        <!-- /site__header-wrap -->
+
+        <!-- site__header-title -->
+        <div class="site__header-title">
+            <h2>Smart &amp; Beautiful
+                <span>Like a Yin &amp; Yang, we&#039;re winning combination</span>
+            </h2>
+        </div>
+        <!-- /site__header-title -->
+
+    </header>
+    <!-- /site__header -->
+
+    <!-- site__content -->
+    <div class="site__content">
+        <!-- who-we -->
+        <div class="who-we">
+
+            <!-- who-we__text -->
+            <div class="who-we__text">
+
+                <!-- who-we__caption -->
+                <div class="who-we__caption">
+                    <h2>Who We Are</h2>
+                    <span>We’re geeks ready to kill deadlines!</span>
+                </div>
+                <!-- /who-we__caption -->
+
+                <div>
+                    <p>
+                        We are a digital agency based in Brussels. We carefully craft websites and create amazing marketing campaigns. We consider ourselves a new type of company, encouraging work without&nbsp;boundaries.
+                    </p>
+                </div>
+            </div>
+            <!-- /who-we__text -->
+
+            <!-- who-we__are -->
+            <div class="who-we__are">
+                <div>
+
+                    <!-- who-we__person -->
+                    <div class="who-we__person">
+                        <div>
+                            <div class="who-we__pic">
+                                <img src="pic/team/01_charles.png" width="296" height="296" alt="person"/>
+                            </div>
+                            <div class="who-we__name">
+                                <h3>Charles</h3>
+                                <span>Web Strategist</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /who-we__person -->
+
+                    <!-- who-we__person -->
+                    <div class="who-we__person">
+                        <div>
+                            <div class="who-we__pic">
+                                <img src="pic/team/02_naga.png" width="296" height="296" alt="person"/>
+                            </div>
+                            <div class="who-we__name">
+                                <h3>Naga</h3>
+                                <span>E-business specialist</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /who-we__person -->
+
+                    <!-- who-we__person -->
+                    <div class="who-we__person">
+                        <div>
+                            <div class="who-we__pic">
+                                <img src="pic/team/03_luka.png" width="296" height="296" alt="person"/>
+                            </div>
+                            <div class="who-we__name">
+                                <h3>Luka</h3>
+                                <span>Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /who-we__person -->
+
+                    <!-- who-we__person -->
+                    <div class="who-we__person">
+                        <div>
+                            <div class="who-we__pic">
+                                <img src="pic/team/07_jipe.png" width="296" height="296" alt="person"/>
+                            </div>
+                            <div class="who-we__name">
+                                <h3>Jean-Philippe</h3>
+                                <span>Back-end Developper</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /who-we__person -->
+
+                    <!-- who-we__person -->
+                    <div class="who-we__person">
+                        <div>
+                            <div class="who-we__pic">
+                                <img src="pic/team/08_jeremy.png" width="296" height="296" alt="person"/>
+                            </div>
+                            <div class="who-we__name">
+                                <h3>Jeremy</h3>
+                                <span>UX Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /who-we__person -->
+
+                    <!-- who-we__person -->
+                    <div class="who-we__person">
+                        <div>
+                            <div class="who-we__pic">
+                                <img src="pic/team/04_yevhenii.png" width="296" height="296" alt="person"/>
+                            </div>
+                            <div class="who-we__name">
+                                <h3>Yevhenii</h3>
+                                <span>Front-end Developper</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /who-we__person -->
+
+                    <!-- who-we__person -->
+                    <div class="who-we__person">
+                        <div>
+                            <div class="who-we__pic">
+                                <img src="pic/team/06_dei.png" width="296" height="296" alt="person"/>
+                            </div>
+                            <div class="who-we__name">
+                                <h3>Dei</h3>
+                                <span>Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /who-we__person -->
+
+                    <!-- who-we__person -->
+                    <div class="who-we__person">
+                        <div>
+                            <div class="who-we__pic">
+                                <img src="pic/team/05_nicolas.png" width="296" height="296" alt="person"/>
+                            </div>
+                            <div class="who-we__name">
+                                <h3>Nikolas</h3>
+                                <span>Front-end Developper</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /who-we__person -->
+
+                    <!-- who-we__person -->
+                    <div class="who-we__person">
+                        <div>
+                            <div class="who-we__pic">
+                                <img src="pic/team/09_filip.png" width="296" height="296" alt="person"/>
+                            </div>
+                            <div class="who-we__name">
+                                <h3>Filip</h3>
+                                <span>Front-end Developper</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /who-we__person -->
+
+                </div>
+            </div>
+            <!-- /who-we__are -->
+
+        </div>
+        <!-- /who-we -->
+
+        <!-- gallery -->
+        <div class="gallery">
+            <div>
+
+                <!-- gallery__description -->
+                <div class="gallery__description">
+                    <p>
+                        We are proud to present you our family dedicated to handle your next project. Our team is composed of talented people mastering the different skills required to create the perfect website.
+                    </p>
+                    <p>
+                        Starting from understanding the customer, moving on to the design, and finishing with the  front-end & back-end development... Amazing work is done by combining all those elements and put them together to get the outstanding result we want to achieve on every project we&nbsp;make.
+                    </p>
+
+                </div>
+                <!-- /gallery__description -->
+
+                <!-- gallery__wrap -->
+                <div class="gallery__wrap">
+                    <h2>The word impossible <span>Is not in our dictionary.</span></h2>
+
+                    <!-- gallery__pic -->
+                    <div class="gallery__pic">
+                        <div class="gallery__pic-preview">
+                            <a data-src="pic/gallery-big3.jpg" href="#">
+                                <img src="pic/gallery3.jpg" width="150" height="150" alt="gallery"/>
+                            </a>
+                            <a data-src="pic/gallery-big2.jpg" href="#">
+                                <img src="pic/gallery2.jpg" width="150" height="150" alt="gallery"/>
+                            </a>
+                            <a data-src="pic/gallery-big1.jpg" href="#">
+                                <img src="pic/gallery1.jpg" width="150" height="150" alt="gallery"/>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- /gallery__pic -->
+
+                </div>
+                <!-- /gallery__wrap -->
+
+            </div>
+        </div>
+        <!-- /gallery -->
+
+        <!-- treasury -->
+        <section class="treasury treasury_other">
+
+            <!-- treasury__grid -->
+            <div class="treasury__grid">
+                <div>
+                    <div class="treasury__grid-card" style="background-image: url(pic/treasury2.jpg);">
+                        <div style="background: rgba(28, 123, 248, .8)">
+
+                            <a href="oandb.html"><span>View case study</span></a>
+                        </div>
+                        <div class="treasury__grid-title">
+                            <h2>O&amp;B</h2>
+                            <span>Your event platform. <span>All Inclusive</span></span>
+                        </div>
+                    </div>
+                    <div class="treasury__grid-card" style="background-image: url(pic/whatwedo.jpg);">
+                        <div style="background: rgba(42, 42, 50, .8)">
+
+                            <a href="what_we_do.html"><span>What we do</span></a>
+                        </div>
+                        <div class="treasury__grid-title">
+                            <h2>What we do</h2>
+                            <span>Team of professionals. <span>We’re conquering the world</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /treasury__grid -->
+
+        </section>
+        <!-- /treasury -->
+
+    </div>
+    <!-- /site__content -->
+
+    <!-- site__footer -->
+    <footer class="site__footer">
+
+        <!-- site__footer-wrap -->
+        <div class="site__footer-wrap">
+            <!-- site__footer-address -->
+            <address class="site__footer-address">
+                Rue ransbeek, 230
+                <span>1120 Neder-Over-Heembeek, Belgium</span>
+            </address>
+            <!-- /site__footer-address -->
+
+            <!-- site__footer-social -->
+            <div class="site__footer-social">
+                <a href="https://www.linkedin.com/company/2517446" target="_blank" class="in"><span></span></a>
+                <a href="https://twitter.com/ergonomicagency" target="_blank" class="t"><span></span></a>
+                <a href="https://www.facebook.com/pages/Ergonomic/216716385093502" target="_blank" class="f"><span></span></a>
+            </div>
+            <!-- /site__footer-social -->
+
+            <a href="launch_a_project.html" class="btn btn_ellipse btn_ellipse-green"><span>Let’s Work Together</span></a>
+
+            <!-- site__footer-copyright -->
+            <div class="site__footer-copyright">© 2016 <span>Ergonomic</span></div>
+            <!-- /site__footer-copyright -->
+        </div>
+        <!-- /site__footer-wrap -->
+
+    </footer>
+    <!-- /site__footer -->
+
+</div>
+<!-- /site -->
+
+<!-- preloader -->
+<div class="preloader">
+    <div></div>
+    <img src="img/preloader-logo.png" alt="Preloader" width="104" height="60"/>
+</div>
+<!-- /preloader -->
+
+
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/jquery.hammer.min.js"></script>
+
+
+
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/jquery.slider.js"></script>
+<script src="js/jquery.example.js"></script>
+<script src="js/jquery.paralax.js"></script>
+<script src="js/jquery.gallery.js"></script>
+<script src="js/jquery.inner-paralax.js"></script>
+
+
+<script type="application/ld+json">
+    {
+         "@context" : "http://schema.org",
+         "@type" : "Organization",
+         "name" : "Ergonomic",
+         "url" : "https://ergonomic.be",
+         "sameAs" : [
+           "https://twitter.com/ergonomicagency",
+           "https://plus.google.com/110588193653496813331",
+           "https://www.facebook.com/Ergonomic-216716385093502/",
+           "http://fr.yelp.be/biz/ergonomic-bruxelles"
+        ]
+    }
+    </script>
+
+
+</body>
+</html>

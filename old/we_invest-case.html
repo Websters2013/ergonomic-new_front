@@ -1,0 +1,456 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="description" content="We are a web agency based in Brussels. Our passion drives us to create crafted website and amazing marketing campaign.">
+    <link href="https://plus.google.com/110588193653496813331" rel="publisher" />
+
+    <title>We_Invest_Case</title>
+    <style>
+        .preloader{
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 3;
+        }
+        .preloader:after,
+        .preloader:before{
+            z-index: 1;
+            position: absolute;
+            background: #fff;
+            content: '';
+            width: 51%;
+            top: 0;
+            bottom: 0;
+            -webkit-transition: width 500ms ease-in-out;
+            transition: width 500ms ease-in-out;
+        }
+        .preloader:after{
+            left: 0;
+        }
+        .preloader:before{
+            right: 0;
+        }
+        .preloader_loaded:after,
+        .preloader_loaded:before{
+            width: 0;
+        }
+        .preloader > div {
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 200px;
+            height: 200px;
+            margin: -100px 0 0 -100px;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            z-index: 2;
+            -webkit-transition: opacity 500ms ease-in-out;
+            transition: opacity 500ms ease-in-out;
+        }
+
+        .preloader_loaded > div {
+            opacity: 0;
+        }
+
+        .preloader > div canvas {
+            top: -2px;
+            left: -2px;
+            position: relative;
+        }
+
+        .preloader > img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -30px 0 0 -52px;
+            z-index: 3;
+            -webkit-transition: opacity 500ms ease-in-out;
+            transition: opacity 500ms ease-in-out;
+        }
+        .preloader_loaded > img,
+        .preloader_loaded > div{
+            opacity: 0;
+        }
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+        @keyframes  spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes spin-reverse {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(-360deg);
+            }
+        }
+        @keyframes  spin-reverse {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(-360deg);
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/inner-paralax.css?v=2" />
+    <link rel="stylesheet" href="css/animated-headlines.css" />
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-21128266-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+</head>
+<body>
+
+
+<!-- site -->
+<div class="site">
+
+    <!-- site__header -->
+    <header class="site__header site__header_red site__header_type-2" style="background-image: url(pic/header-bg-house.jpg)">
+
+        <!-- site__header-wrap -->
+        <div class="site__header-wrap">
+
+            <!-- logo -->
+            <a href="http://ergonomic.loc" class="logo">
+                <img src="img/logo-white.png" width="104" height="60"/>
+            </a>
+            <!-- /logo -->
+
+            <!--menu-->
+            <nav class="menu menu_inner no-action">
+
+                <!-- menu__wrap -->
+                <div class="menu__wrap">
+                    <ul>
+                        <li>
+                            <a href="what_we_do.html" class="">Services</a>
+                        </li>
+                        <li>
+                            <a href="showcase.html" class="active">work</a>
+                        </li>
+                        <li>
+                            <a href="who_we_are.html" class="">Team</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="">Contact</a>
+                        </li>
+                    </ul>
+                    <a href="launch_a_project.html" class="btn btn_ellipse btn_ellipse-shadow "><span>Launch A Project</span></a>
+                </div>
+                <!-- menu__wrap -->
+
+            </nav>
+            <!-- /menu -->
+
+        </div>
+        <!-- /site__header-wrap -->
+
+        <!-- site__header-title -->
+        <div class="site__header-title">
+            <h2>We Invest
+                <span>Branding, Website, Marketing</span>
+            </h2>
+        </div>
+        <!-- /site__header-title -->
+
+    </header>
+    <!-- /site__header -->
+
+    <!-- site__content -->
+    <div class="site__content">
+
+        <!-- we-invest -->
+        <div class="we-invest">
+            <p>For a serious job, you need a serious branding and a website.
+                Our passion for outstanding products drives us to
+                create lovely We Invest branding.</p>
+            <div class="paralax">
+                <img src="img/paralax7.png" data-dictance="-100" alt="">
+                <img src="img/paralax8.png" data-dictance="100" alt="">
+                <img src="img/paralax12.png" data-dictance="-200" alt="">
+            </div>
+        </div>
+        <!-- /we-invest -->
+
+        <!-- branding-identity -->
+        <div class="branding-identity">
+            <h2 class="site__caption">
+                Branding Identity
+                <span>Building strong brand from the old one</span>
+            </h2>
+
+            <!-- branding-identity__items -->
+            <div class="branding-identity__items">
+                <div>
+
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div>
+                                    <div>
+                                        <img src="pic/branding-slide1.jpg" width="960" height="540" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <div>
+                                        <img src="pic/branding-slide2.jpg" width="960" height="540" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <div>
+                                        <img src="pic/branding-slide3.jpg" width="960" height="540" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="branding-identity__text">
+                        <h3>A triumphant red for We Invest</h3>
+                        <p>We Invest asked us to redesign their logo. In 2015, their goal was to rework their image to make it more attractive and recognizable. Indeed, the human side was one of the main values that we wanted to implement for this new direction.</p>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /branding-identity__items -->
+
+        </div>
+        <!-- /branding-identity -->
+
+        <!-- logo-design -->
+        <div class="logo-design">
+            <h2 class="site__caption">
+                Logo Design
+                <span>Redesign & Modernization</span>
+            </h2>
+            <img src="pic/design-logo.gif" width="540" height="281" alt=""/>
+        </div>
+        <!-- /logo-design -->
+
+        <!-- website -->
+        <div class="website">
+            <h2 class="site__caption">
+                Website
+                <span>Design & Development</span>
+            </h2>
+
+            <!-- website__items -->
+            <div class="website__items">
+                <div>
+                    <h3>Modern Design</h3>
+                    <p>
+                        We worked hard to create a modern and human look and feel.
+                        The result is a clean, modern design.
+                    </p>
+                </div>
+                <div>
+                    <h3>Sharp Coded</h3>
+                    <p>
+                        The inside is as beautiful as the outside.
+                        Search engines like it, and it turns out we like that too.
+                    </p>
+                </div>
+            </div>
+            <!-- /website__items -->
+
+        </div>
+        <!-- /website-->
+
+        <!-- synchronized-->
+        <div class="synchronized">
+
+            <h2 class="site__caption">
+                All their data synchronized
+                <span>We linked their CRM of Property Management Whise to the website</span>
+            </h2>
+
+            <!-- synchronized__sites-->
+            <div class="synchronized__sites"></div>
+            <!-- /synchronized__sites-->
+
+            <div class="paralax">
+                <img src="img/paralax9.jpg" data-dictance="-160" alt="">
+                <img src="img/paralax10.jpg" data-dictance="-160" alt="">
+            </div>
+
+            <div class="weinvest-button">
+                <a href="http://www.weinvest.be/" target="_blank" class="btn btn_red" style="display: inline-block;">
+                    <span>We Invest Website</span>
+                </a>
+            </div>
+
+            <!-- synchronized__reviews-->
+            <div class="synchronized__reviews">
+                <p>It's a real pleasure to work with Ergonomic's team. <span>They're friendly, and professional. </span></p>
+                <div class="synchronized__reviews-name"><h3>Jonathan Pham</h3>, CEO of WeInvest</div>
+            </div>
+            <!-- /synchronized__reviews-->
+
+        </div>
+        <!-- /synchronized-->
+
+        <!-- join-project -->
+        <div class="join-project">
+
+            <!-- join-project__now -->
+            <div class="join-project__now">
+                <h2>You like what you see?</h2>
+                <a href="launch_a_project.html" class="btn btn_white"><span>Launch A Project</span></a>
+            </div>
+            <!-- /join-project__now -->
+
+            <!-- treasury -->
+            <section class="treasury treasury_other">
+
+                <!-- treasury__grid -->
+                <div class="treasury__grid">
+                    <div>
+                        <div class="treasury__grid-card" style="background-image: url(pic/treasury2.jpg);">
+                            <div style="background: rgba(28, 123, 248, .8)">
+
+                                <a href="oandb.html"><span>View case study</span></a>
+                            </div>
+                            <div class="treasury__grid-title">
+                                <h2>O&amp;B</h2>
+                                <span>Your event platform. <span>All Inclusive</span></span>
+                            </div>
+                        </div>
+                        <div class="treasury__grid-card" style="background-image: url(pic/whatwedo.jpg);">
+                            <div style="background: rgba(42, 42, 50, .8)">
+
+                                <a href="what_we_do.html"><span>What we do</span></a>
+                            </div>
+                            <div class="treasury__grid-title">
+                                <h2>What we do</h2>
+                                <span>Team of professionals. <span>We’re conquering the world</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /treasury__grid -->
+
+            </section>
+            <!-- /treasury -->
+
+        </div>
+        <!-- /join-project-->
+
+    </div>
+    <!-- /site__content -->
+
+    <!-- site__footer -->
+    <footer class="site__footer">
+
+        <!-- site__footer-wrap -->
+        <div class="site__footer-wrap">
+            <!-- site__footer-address -->
+            <address class="site__footer-address">
+                Rue ransbeek, 230
+                <span>1120 Neder-Over-Heembeek, Belgium</span>
+            </address>
+            <!-- /site__footer-address -->
+
+            <!-- site__footer-social -->
+            <div class="site__footer-social">
+                <a href="#" class="in"><span></span></a>
+                <a href="#" class="t"><span></span></a>
+                <a href="#" class="f"><span></span></a>
+            </div>
+            <!-- /site__footer-social -->
+
+            <a href="launch_a_project.html" class="btn"><span>Let’s Work Together</span></a>
+
+            <!-- site__footer-copyright -->
+            <div class="site__footer-copyright">© 2016 <span>Ergonomic</span></div>
+            <!-- /site__footer-copyright -->
+        </div>
+        <!-- /site__footer-wrap -->
+
+    </footer>
+    <!-- /site__footer -->
+
+</div>
+<!-- /site -->
+
+<!-- preloader -->
+<div class="preloader">
+    <div></div>
+    <img src="img/preloader-logo.png" alt="Preloader" width="104" height="60"/>
+</div>
+<!-- /preloader -->
+
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/jquery.hammer.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=false"></script>
+
+
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/jquery.slider.js"></script>
+<script src="js/jquery.example.js"></script>
+<script src="js/jquery.paralax.js"></script>
+<script src="js/jquery.gallery.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/jquery.inner-paralax.js"></script>
+<script src="js/animated-headline.js"></script>
+
+
+
+
+<script type="application/ld+json">
+{
+     "@context" : "http://schema.org",
+     "@type" : "Organization",
+     "name" : "Ergonomic",
+     "url" : "https://ergonomic.be",
+     "sameAs" : [
+       "https://twitter.com/ergonomicagency",
+       "https://plus.google.com/110588193653496813331",
+       "https://www.facebook.com/Ergonomic-216716385093502/",
+       "http://fr.yelp.be/biz/ergonomic-bruxelles"
+    ]
+}
+</script>
+
+</body>
+</html>

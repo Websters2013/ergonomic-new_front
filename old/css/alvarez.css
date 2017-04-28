@@ -1,0 +1,523 @@
+.site__content{
+    overflow: hidden;
+}
+
+/* ------------ promo-alvarez ------------ */
+.promo-alvarez {
+    background: url(../img/alvarez/bg-site-001.png) no-repeat calc(50% + 735px) 0;
+    background-color: #df9f38;
+    color: #fff;
+    font: 300 22px 'aktivgrotesk-light', sans-serif;
+}
+.promo-alvarez__layout{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    height: 100vh;
+    max-height: 917px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.promo-alvarez h1{
+    margin-bottom: 12px;
+    font: 700 30px 'aktivgrotesk-bold', sans-serif;
+}
+.promo-alvarez p{
+    margin-bottom: 35px;
+    letter-spacing: 1px;
+}
+/* ------------ /promo-alvarez ------------ */
+
+/* ------------ project-alvarez ------------ */
+.project-alvarez{
+    position: relative;
+    margin-top: -1px;
+    padding: 65px 0 66px;
+}
+.project-alvarez__men{
+    display: none;
+}
+.project-alvarez__layout{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    z-index: 3;
+}
+.project-alvarez__header{
+    max-width: 600px;
+    margin: 0 auto 70px;
+    padding: 0 15px;
+    color: #181929;
+    font: 300 16px/24px 'aktivgrotesk-light', sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.project-alvarez__header h2{
+    margin-bottom: 12px;
+    font: 700 24px 'aktivgrotesk-bold', sans-serif;
+    letter-spacing: 0;
+}
+.project-alvarez__content{
+    color: #181929;
+    font: 300 16px/24px 'aktivgrotesk-light', sans-serif;
+}
+.project-alvarez__content h3{
+    margin-bottom: 25px;
+    font: 700 24px/35px 'aktivgrotesk-bold', sans-serif;
+}
+.project-alvarez__content p {
+    margin-bottom: 36px;
+    letter-spacing: 1.2px;
+}
+.project-alvarez__content p.project-alvarez__note{
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: .9px;
+}
+.project-alvarez__img{
+    position: relative;
+}
+.project-alvarez__img.active{
+    opacity: 1;
+}
+.project-alvarez__img.dapper img{
+    left: 0;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    -webkit-transition: left .8s cubic-bezier(.165,.84,.44,1),-webkit-filter .8s cubic-bezier(.165,.84,.44,1);
+    transition: left .8s cubic-bezier(.165,.84,.44,1),filter .8s cubic-bezier(.165,.84,.44,1);
+}
+.project-alvarez__img.active img{
+    -webkit-filter: blur(0);
+    filter: blur(0);
+}
+.project-alvarez__img img{
+    width: 60%;
+}
+.project-alvarez__img img:first-child{
+    position: relative;
+    box-shadow: 60px 0 80px 0 rgba(0, 0, 0, 0.05);
+    z-index: 3;
+}
+.project-alvarez__img img:nth-child(2){
+    position: absolute;
+    top: 50%;
+    box-shadow: 60px 0 80px 0 rgba(0, 0, 0, 0.05);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.project-alvarez__img img:nth-child(3){
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.project-alvarez__img.active img:nth-child(2){
+    left: 60px;
+}
+.project-alvarez__img.active img:nth-child(3){
+    left: 120px;
+}
+/* ------------ /project-alvarez ------------ */
+
+/* ------------ prototyping-alvarez ------------ */
+.prototyping-alvarez{
+    position: relative;
+    padding-bottom: 53px;
+    z-index: 3;
+}
+.prototyping-alvarez__layout{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.prototyping-alvarez__content{
+    color: #181929;
+    font: 300 16px/24px 'aktivgrotesk-light', sans-serif;
+    letter-spacing: 1px;
+}
+.prototyping-alvarez__content h2{
+    margin-bottom: 15px;
+    font: 700 24px/35px 'aktivgrotesk-bold', sans-serif;
+}
+.prototyping-alvarez__content p {
+    margin-bottom: 40px;
+    letter-spacing: 1.2px;
+}
+.prototyping-alvarez__content p.prototyping-alvarez__note{
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: .9px;
+}
+
+.work__example{
+    width: 100%;
+    max-width: 876px;
+    box-shadow: 10px 0 80px rgba(0,0,0,.1);
+}
+.work__example > div {
+    padding-top: 75%;
+    background-repeat: no-repeat;
+}
+.work__example-control{
+    background-color: #df9f38;
+    box-shadow: 0 0 40px rgba(0,0,0,.4);
+}
+.work__example-line{
+    top: 0;
+    bottom: 0;
+    background-color: #df9f38;
+    box-shadow: 0 6px 40px rgba(0,0,0,.2);
+}
+/* ------------ prototyping-alvarez ------------ */
+
+/* ------------ estimation-alvarez ------------ */
+.estimation-alvarez{
+    position: relative;
+    padding-bottom: 50px;
+    background-color: #eee;
+    z-index: 3;
+}
+.estimation-alvarez__layout{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 56px 15px 0;
+    text-align: center;
+}
+.estimation-alvarez__layout h2{
+    margin-bottom: 75px;
+    color: #181929;
+    font: 700 24px/30px 'aktivgrotesk-bold', sans-serif;
+    letter-spacing: .8px;
+}
+.estimation-alvarez__layout img{
+    display: block;
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 50px rgba(0,0,0,.1);
+    z-index: 2;
+}
+.estimation-alvarez__video{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    width: 100%;
+    max-width: 1170px;
+    height: 250px;
+    margin: 0 auto;
+    color: #fff;
+    font: 14px 'aktivgrotesk-regular', sans-serif;
+    background: url(../img/alvarez/img-007.jpg) no-repeat center;
+    text-align: center;
+}
+.estimation-alvarez__video h2{
+    margin-bottom: 32px;
+    font: 700 24px 'aktivgrotesk-bold', sans-serif;
+    color: #fff;
+}
+.estimation-alvarez__video svg{
+    width: 32px;
+    margin-bottom: 14px;
+    fill: #df9f38;
+    enable-background:new 0 0 94.2 100;
+}
+/* ------------ estimation-alvarez ------------ */
+
+/* ------------ propose-alvarez ------------ */
+.propose-alvarez{
+    position: relative;
+    top: -2px;
+    background-color: #eee;
+    z-index: 3;
+}
+.propose-alvarez__layout{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.propose-alvarez__content{
+    margin-bottom: 125px;
+    max-width: 570px;
+    color: #181929;
+    font: 300 16px/24px 'aktivgrotesk-light', sans-serif;
+    letter-spacing: 1px;
+}
+.propose-alvarez__content h2{
+    margin-bottom: 18px;
+    font: 700 24px/24px 'aktivgrotesk-bold', sans-serif;
+    letter-spacing: 0;
+}
+.propose-alvarez__content p{
+    margin-bottom: 29px;
+}
+.propose-alvarez__img{
+    position: relative;
+    left: auto;
+    width: 100%;
+    max-width: 488px;
+    margin: 0 auto;
+}
+.propose-alvarez__img img{
+    max-width: 100%;
+}
+.propose-alvarez__img img:first-child{
+    position: absolute;
+    top: -105px;
+    left: 50%;
+    max-width: 65%;
+    z-index: -1;
+}
+/* ------------ propose-alvarez ------------ */
+
+@media (min-width: 768px) {
+
+    /* ------------ promo-alvarez ------------ */
+    .promo-alvarez {
+        height: 1430px;
+    }
+    .promo-alvarez h1{
+        font-size: 60px;
+    }
+    .promo-alvarez__layout{
+        padding-top: 110px;
+    }
+    /* ------------ /promo-alvarez ------------ */
+
+    /* ------------ project-alvarez ------------ */
+    .project-alvarez{
+        background-color: #df9f38;
+        padding-bottom: 196px;
+    }
+    .project-alvarez:before{
+        position: absolute;
+        top: 978px;
+        left: calc( 50% - 160px );
+        width: 4165px;
+        height: 5165px;
+        border-radius: 17px;
+        background: url(../img/alvarez/bg-site-002.jpg) no-repeat top left #fff;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg) translateX(-50%);
+        z-index: 2;
+        content: '';
+    }
+    .project-alvarez__header{
+        margin-bottom: 191px;
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .project-alvarez__header h2{
+        font-size: 36px;
+    }
+    .project-alvarez__men{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -720px;
+        left: 50%;
+        -webkit-transform: translateX(-383px);
+        transform: translateX(-383px);
+        z-index: 1;
+    }
+    .project-alvarez__men .dapper{
+        opacity: 0;
+        -webkit-transform: translateY(55px);
+        transform: translateY(55px);
+        -webkit-transition: -webkit-transform .8s cubic-bezier(.165,.84,.44,1),opacity .8s cubic-bezier(.165,.84,.44,1);
+        transition: transform .8s cubic-bezier(.165,.84,.44,1),opacity .8s cubic-bezier(.165,.84,.44,1);
+    }
+    .project-alvarez__men .active{
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    .project-alvarez__men img:first-child{
+        position: relative;
+        top: -26px;
+        left: -24px;
+    }
+    .project-alvarez__frame{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .project-alvarez__content{
+        width: 50%;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .project-alvarez__content h3 {
+        margin-bottom: 10px;
+        font-size: 24px;
+        line-height: 35px;
+    }
+    .project-alvarez__content p.project-alvarez__note{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    /* ------------ /project-alvarez ------------ */
+
+    /* ------------ prototyping-alvarez ------------ */
+    .prototyping-alvarez{
+        padding-bottom: 113px;
+    }
+    .prototyping-alvarez__content{
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .prototyping-alvarez__content h2{
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .prototyping-alvarez__content p.prototyping-alvarez__note{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    /* ------------ /prototyping-alvarez ------------ */
+
+    /* ------------ estimation-alvarez ------------ */
+    .estimation-alvarez {
+        padding-bottom: 100px;
+    }
+    .estimation-alvarez__layout{
+        padding-top: 196px;
+    }
+    .estimation-alvarez__layout h2{
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .estimation-alvarez__layout img{
+        max-width: 99%;
+    }
+    .estimation-alvarez__video{
+        height: 559px;
+        margin-top: -59px;
+        font-size: 18px;
+    }
+    .estimation-alvarez__video h2{
+        font-size: 35px;
+    }
+    /* ------------ /estimation-alvarez ------------ */
+
+    /* ------------ propose-alvarez ------------ */
+    .propose-alvarez{
+        padding-top: 96px;
+    }
+    .propose-alvarez__content{
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .propose-alvarez__content h2{
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .propose-alvarez__img img:first-child{
+        top: -183px;
+    }
+    /* ------------ /propose-alvarez ------------ */
+
+}
+
+@media (min-width: 1024px) {
+
+    /* ------------ project-alvarez ------------ */
+    .project-alvarez__men{
+        top: -486px;
+        -webkit-transform: translateX(-584px);
+        transform: translateX(-584px);
+    }
+    .project-alvarez__content{
+        padding: 33px 125px 0 0;
+    }
+    .project-alvarez__img{
+        position: relative;
+        width: 50%;
+    }
+    .project-alvarez__img img{
+        width: auto;
+    }
+    .project-alvarez__img.active img:nth-child(2){
+        left: 189px;
+    }
+    .project-alvarez__img.active img:nth-child(3){
+        left: 349px;
+    }
+    /* ------------ /project-alvarez ------------ */
+
+    /* ------------ prototyping-alvarez ------------ */
+    .prototyping-alvarez__layout{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .prototyping-alvarez__content{
+        order: 2;
+        width: 50%;
+        padding: 41px 0 0 113px;
+    }
+    .prototyping-alvarez__example{
+        order: 1;
+        position: relative;
+        width: 50%;
+        height: 659px;
+    }
+
+    .work__example{
+        position: absolute;
+        top: 50%;
+        right: 16px;
+        max-height: 657px;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    /* ------------ /prototyping-alvarez ------------ */
+
+    /* ------------ propose-alvarez ------------ */
+    .propose-alvarez{
+        padding-bottom: 197px;
+    }
+    .propose-alvarez__content {
+        margin-bottom: 0;
+    }
+    .propose-alvarez__img{
+        position: absolute;
+        right: 0;
+        bottom: -113px;
+        width: 488px;
+        height: 337px;
+    }
+    .propose-alvarez__img img{
+        position: absolute;
+    }
+    .propose-alvarez__img img:first-child{
+        left: auto;
+        top: -210px;
+        right: -28px;
+        max-width: 100%;
+        z-index: 1;
+    }
+    /* ------------ /propose-alvarez ------------ */
+
+    /* ------------ estimation-alvarez ------------ */
+    .estimation-alvarez__video svg{
+        -webkit-transition: transform .3s ease;
+        transition: transform .3s ease;
+    }
+    .estimation-alvarez__video:hover svg{
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2)
+    }
+    /* ------------ /estimation-alvarez ------------ */
+
+}

@@ -1,0 +1,534 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+
+    <title>Launch_A_Project</title>
+    <style>
+        .preloader{
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 3;
+        }
+        .preloader:after,
+        .preloader:before{
+            z-index: 1;
+            position: absolute;
+            background: #fff;
+            content: '';
+            width: 51%;
+            top: 0;
+            bottom: 0;
+            -webkit-transition: width 500ms ease-in-out;
+            transition: width 500ms ease-in-out;
+        }
+        .preloader:after{
+            left: 0;
+        }
+        .preloader:before{
+            right: 0;
+        }
+        .preloader_loaded:after,
+        .preloader_loaded:before{
+            width: 0;
+        }
+        .preloader > div {
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 200px;
+            height: 200px;
+            margin: -100px 0 0 -100px;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            z-index: 2;
+            -webkit-transition: opacity 500ms ease-in-out;
+            transition: opacity 500ms ease-in-out;
+        }
+
+        .preloader_loaded > div {
+            opacity: 0;
+        }
+
+        .preloader > div canvas {
+            top: -2px;
+            left: -2px;
+            position: relative;
+        }
+
+        .preloader > img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -30px 0 0 -52px;
+            z-index: 3;
+            -webkit-transition: opacity 500ms ease-in-out;
+            transition: opacity 500ms ease-in-out;
+        }
+        .preloader_loaded > img,
+        .preloader_loaded > div{
+            opacity: 0;
+        }
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+        @keyframes  spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes spin-reverse {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(-360deg);
+            }
+        }
+        @keyframes  spin-reverse {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(-360deg);
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/select.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/inner-paralax.css" />
+
+</head>
+<body>
+
+<!-- site -->
+<div class="site">
+
+    <!-- site__header -->
+    <header class="site__header " style="background-image: url(pic/header-paralax_2.jpg)">
+
+        <!-- site__header-wrap -->
+        <div class="site__header-wrap">
+
+            <!-- logo -->
+            <a href="/" class="logo">
+                <img src="http://ergonomic.loc/img/logo-white.png" alt=""/>
+            </a>
+            <!-- /logo -->
+
+            <nav class="menu menu_inner">
+
+                <!-- menu__wrap -->
+                <div class="menu__wrap">
+                    <ul>
+                        <li>
+                            <a href="what_we_do.html" class="">Services</a>
+                        </li>
+                        <li>
+                            <a href="showcase.html" class="">work</a>
+                        </li>
+                        <li>
+                            <a href="who_we_are.html" class="">Team</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="">Contact</a>
+                        </li>
+                    </ul>
+                    <a href="launch_a_project.html" class="btn btn_ellipse btn_ellipse-shadow active"><span>Launch A Project</span></a>
+                </div>
+                <!-- menu__wrap -->
+
+            </nav>
+            <!-- /menu -->
+
+        </div>
+        <!-- /site__header-wrap -->
+
+        <!-- site__header-title -->
+        <div class="site__header-title">
+            <h2>Let&#039;s conquer the world together!
+                <span></span>
+            </h2>
+        </div>
+        <!-- /site__header-title -->
+
+    </header>
+    <!-- /site__header -->
+
+    <!-- site__content -->
+    <div class="site__content">
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- site__content-congrats -->
+            <section class="site__content-congrats">
+                <h1 class="site__content-congrats-title">Congratulations!</h1>
+                <p>If you are in this page means that you have an amazing idea or project to launch..</p>
+            </section>
+            <!-- /site__content-congrats -->
+
+            <!-- project-order -->
+            <form method="POST" action="http://ergonomic.loc/launch-a-project" accept-charset="UTF-8" class="project-order" enctype="multipart/form-data"><input name="_token" type="hidden" value="ZXyaQgmRha4oN60V0Z2qjRTrnnbpnpSw3ZbTBHHO">
+
+                <p>
+                    Fill in the form below and make it real! Our team will make your dreams become reality.
+                </p>
+
+                <!-- project-order__column -->
+                <div class="project-order__column project-order__column_left">
+
+                    <fieldset>
+                        <label>Personal Details</label>
+                        <input type="text" name="fullname" placeholder="Full Name"/>
+                        <input type="email" name="emailaddress" placeholder="Email Address"/>
+                        <input type="tel" name="phonenumber" placeholder="Phone Number"/>
+                        <input type="text" name="company" placeholder="Company"/>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="additionalinfo">Additional Info</label>
+                        <textarea name="additionalinfo" id="additionalinfo" cols="30" rows="10" placeholder="Write a little bit more about your project..."></textarea>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="referal">How did you hear about us?</label>
+                        <input type="text" placeholder="Google, old client, linkedin, facebook, ... ?" id="referal" name="referal"/>
+                    </fieldset>
+
+                </div>
+                <!-- /project-order__column -->
+
+                <!-- project-order__column -->
+                <div class="project-order__column">
+
+                    <fieldset>
+                        <span class="project-order__label">What do you need?</span>
+                        <div>
+                            <input type="checkbox" id="website"/>
+                            <label for="website">Website</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="ecommerce"/>
+                            <label for="ecommerce">e-Commerce</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="webplatform"/>
+                            <label for="webplatform">Interactive Web Platform</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="marketing"/>
+                            <label for="marketing">Marketing Campaign</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="other"/>
+                            <label for="other">Other</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="project-order__deadline">
+                        <label for="deadlinenumber">Project Deadline?</label>
+                        <span class="project-order__sub-label">Enter number of days/months below</span>
+                        <div>
+                            <input type="text" name="deadlinenumber" id="deadlinenumber" placeholder="0"/>
+                            <div class="project-order__deadline-select">
+                                <select name="deadlinetype">
+                                    <option value="months">Months</option>
+                                    <option value="days">Days</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+
+                        <span class="project-order__label">Your Budget?</span>
+
+                        <div class="project-order__budget">
+                            <label for="amount"></label>
+                            <input type="text" name="amount" id="amount"/>
+                        </div>
+
+                        <div class="project-order__slider-wrap">
+                            <span>&#8364; -3000</span>
+                            <div id="project-order__slider" data-min="3000" data-max="30000" data-default-min="7000" data-default-max="22000"></div>
+                            <span>&#8364; 30 000 +</span>
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset class="project-order__upload">
+                        <span class="project-order__label">File Upload</span>
+
+                        <span class="project-order__sub-label">If you have something to show us, upload it</span>
+
+                        <div class="project-order__upload-wrap" id="project-upload-preview">
+
+
+                        </div>
+
+                        <div class="loading-spinner">
+                            <div class="bubblingG">
+                            <span id="bubblingG_1">
+                            </span>
+                                <span id="bubblingG_2">
+                            </span>
+                                <span id="bubblingG_3">
+                            </span>
+                            </div>
+                        </div>
+
+                        <label class="project-order__upload-label">
+                            <span>Upload Files</span>
+                            <input type="file" id="fileupload" name="fileupload[]" multiple/>
+                        </label>
+
+                    </fieldset>
+
+                </div>
+                <!-- /project-order__column -->
+
+                <span class="project-order__submit">
+                <button type="submit"><span>SUBMIT YOUR PROJECT</span></button>
+            </span>
+
+            </form>
+            <!-- /project-order -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site__content -->
+
+    <!-- site__footer -->
+    <footer class="site__footer">
+
+        <!-- site__footer-wrap -->
+        <div class="site__footer-wrap">
+            <!-- site__footer-address -->
+            <address class="site__footer-address">
+                Rue ransbeek, 230
+                <span>1120 Neder-Over-Heembeek, Belgium</span>
+            </address>
+            <!-- /site__footer-address -->
+
+            <!-- site__footer-social -->
+            <div class="site__footer-social">
+                <a href="https://www.linkedin.com/company/2517446" target="_blank" class="in"><span></span></a>
+                <a href="https://twitter.com/ergonomicagency" target="_blank" class="t"><span></span></a>
+                <a href="https://www.facebook.com/pages/Ergonomic/216716385093502" target="_blank" class="f"><span></span></a>
+            </div>
+            <!-- /site__footer-social -->
+
+            <a href="http://ergonomic.loc/launch-a-project" class="btn btn_ellipse btn_ellipse-green"><span>Let’s Work Together</span></a>
+
+            <!-- site__footer-copyright -->
+            <div class="site__footer-copyright">© 2016 <span>Ergonomic</span></div>
+            <!-- /site__footer-copyright -->
+        </div>
+        <!-- /site__footer-wrap -->
+
+    </footer>
+    <!-- /site__footer -->
+
+</div>
+<!-- /site -->
+
+<!-- preloader -->
+<div class="preloader">
+    <div></div>
+    <img src="http://ergonomic.loc/img/preloader-logo.png" alt="Preloader" width="104" height="60"/>
+</div>
+<!-- /preloader -->
+
+
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/hammer.min.js"></script>
+
+
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/jquery.slider.js"></script>
+<script src="js/iscroll-probe-min.js"></script>
+<script src="js/jquery.select.js"></script>
+<script>
+    //$('.project-order__upload-item').on({'click':function(){ alert('hello'); return false; }});
+</script>
+<script>
+
+    $(function()
+    {
+        // Variable to store your files
+        var files;
+
+        // Add events
+        $('input[type=file]').on('change', uploadFiles);
+
+        $('.project-order__upload').on('click', '.project-order__upload-item', removeFile);
+
+
+
+        // Catch the files and upload them
+        function uploadFiles(event)
+        {
+            files = event.target.files;
+
+            event.stopPropagation(); // Stop stuff happening
+            event.preventDefault(); // Totally stop stuff happening
+
+            // @todo: START A LOADING SPINNER HERE
+            $('.loading-spinner').slideDown(500);
+
+            // Create a formdata object and add the files
+            var data = new FormData();
+            $.each(files, function(key, value)
+            {
+                data.append(key, value);
+            });
+            data.append('_token', $('input[name=_token]').attr('value')); // Necessary for laravel
+
+
+            $.ajax({
+                url: 'launch-a-project/files',
+                type: 'POST',
+                data: data,
+                cache: false,
+                dataType: 'json',
+                processData: false, // Don't process the files
+                contentType: false, // Set content type to false as jQuery will tell the server its a query string request
+                success: function(data, textStatus, jqXHR)
+                {
+                    if(typeof data.error === 'undefined')
+                    {
+                        // Success, now add preview
+                        addFiles(data);
+
+                        // STOP LOADING SPINNER
+                        $('.loading-spinner').slideUp(500);
+                    }
+                    else
+                    {
+                        // Handle errors here
+                        console.log('ERRORS: ' + data.error);
+                    }
+                },
+                error: function(jqXHR, textStatus, errorThrown)
+                {
+                    // Handle errors here
+                    console.log('ERRORS: ' + textStatus);
+                    // STOP LOADING SPINNER
+                    $('.loading-spinner').slideUp(500);
+                }
+            });
+            console.log(files);
+            console.log(data);
+        }
+
+        function addFiles(data) {
+
+            for (var i = 0; i < data.uploaded_files.length; i++) {
+                console.log(data.uploaded_files[i]);
+
+                var file_class = setPreviewClass(data.uploaded_files[i]);
+
+                $('#project-upload-preview').append('<a href="#" class="project-order__upload-item ' + file_class + '" data-rawname="' + data.uploaded_files_rawnames[i] + '"><span>' + data.uploaded_files[i] + '</span></a>');
+
+                $('form').append('<input type="hidden" name="ajaxuploaded[]" value="' + data.uploaded_files_rawnames[i] + '">')
+            };
+        }
+
+        function removeFile(event) {
+            $('input[value="' + $(this).data('rawname') + '"]').remove();
+            $(this).slideUp('fast');
+        }
+
+        function setPreviewClass(data) {
+            var file_class = 'project-order__upload-item';
+            var file_extension = getExtension(data);
+
+            if (file_extension == 'doc' || file_extension == 'docx') {
+                file_class = 'project-order__upload-item_doc';
+            }
+            if (file_extension == 'pdf') {
+                file_class = 'project-order__upload-item_pdf';
+            }
+            if (file_extension == 'jpg') {
+                file_class = 'project-order__upload-item_jpg';
+            }
+            if (file_extension == 'png') {
+                file_class = 'project-order__upload-item_png';
+            }
+            if (file_extension == 'xls') {
+                file_class = 'project-order__upload-item_xls';
+            }
+            if (file_extension == 'zip') {
+                file_class = 'project-order__upload-item_zip';
+            }
+            if (file_extension == 'psd') {
+                file_class = 'project-order__upload-item_psd';
+            }
+            if (file_extension == 'ai') {
+                file_class = 'project-order__upload-item_ai';
+            }
+            if (file_extension == 'mov') {
+                file_class = 'project-order__upload-item_mov';
+            }
+
+            return file_class;
+
+        }
+
+        function getExtension(str) {
+            str = str.split('.');
+            return str.pop();
+        }
+
+    });
+
+</script>
+
+
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/jquery.slider.js"></script>
+<script src="js/jquery.example.js"></script>
+<script src="js/jquery.paralax.js"></script>
+<script src="js/jquery.gallery.js"></script>
+<script src="js/jquery.inner-paralax.js"></script>
+
+
+<script type="application/ld+json">
+    {
+         "@context" : "http://schema.org",
+         "@type" : "Organization",
+         "name" : "Ergonomic",
+         "url" : "https://ergonomic.be",
+         "sameAs" : [
+           "https://twitter.com/ergonomicagency",
+           "https://plus.google.com/110588193653496813331",
+           "https://www.facebook.com/Ergonomic-216716385093502/",
+           "http://fr.yelp.be/biz/ergonomic-bruxelles"
+        ]
+    }
+</script>
+
+</body>
+</html>

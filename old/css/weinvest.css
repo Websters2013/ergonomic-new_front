@@ -1,0 +1,677 @@
+
+.weinvest-case {
+
+}
+.weinvest-case__centered {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.weinvest-case__hero {
+    padding-top: 155px;
+    margin-bottom: -87px;
+    background: #01bacc;
+    background: -webkit-linear-gradient(-45deg,  #01bacc 0%,#01bccd 41%,#00c0cd 48%,#01cbd5 100%);
+    background: linear-gradient(135deg,  #01bacc 0%,#01bccd 41%,#00c0cd 48%,#01cbd5 100%);
+    color: #fff;
+    text-align: center;
+}
+.weinvest-case__hero .btn {
+    margin-bottom: 45px;
+}
+.weinvest-case__hero-title {
+    margin-bottom: 5px;
+    font-size: 45px;
+    line-height: 55px;
+    font-family: 'aktivgrotesk-bold', sans-serif;
+}
+.weinvest-case__hero-text {
+    font-size: 21px;
+    line-height: 30px;
+    margin-bottom: 42px;
+    letter-spacing: 1.8px;
+}
+.weinvest-case__mac {
+    position: relative;
+    left: 8px;
+    width: 90.4%;
+    margin: 0 auto;
+    padding-bottom: 53%;
+    background: url(../img/mac-book.png) no-repeat;
+    background-size: cover;
+}
+.weinvest-case__mac.dapper {
+    opacity: 1;
+}
+.weinvest-case__mac:before,
+.weinvest-case__mac:after {
+    position: absolute;
+    bottom: 24.8%;
+    width: 16.183%;
+    height: 72.68%;
+    content: '';
+    -webkit-transition: transform .8s cubic-bezier(.165,.84,.44,1),opacity .5s cubic-bezier(.165,.84,.44,1);
+    transition: transform .8s cubic-bezier(.165,.84,.44,1),opacity .5s cubic-bezier(.165,.84,.44,1);
+}
+.weinvest-case__mac:before {
+    opacity: 0;
+    left: -13px;
+    background: url(../img/decoration-icons_left.png) no-repeat;
+    background-size: cover;
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
+}
+.weinvest-case__mac:after {
+    opacity: 0;
+    right: -13px;
+    bottom: 26%;
+    width: 17.56%;
+    height: 69.88%;
+    background: url(../img/decoration-icons_right.png) no-repeat;
+    background-size: contain;
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+}
+.weinvest-case__mac.active:before,
+.weinvest-case__mac.active:after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+}
+.weinvest-case__mac img {
+    position: absolute;
+    z-index: 2;
+    left: 51.5%;
+    top: 6.3%;
+    transform: translateX(-50%);
+    width: 73%;
+    display: block;
+    margin: 0 0 0 -6px;
+}
+.weinvest-case__project {
+    padding: 248px 15px 248px;
+    background: #eeeeee;
+}
+.weinvest-case__project-icon.dapper {
+    opacity: 1;
+}
+.weinvest-case__project-icon {
+    display: none;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transition: transform .8s cubic-bezier(.165,.84,.44,1);
+    transition: transform .8s cubic-bezier(.165,.84,.44,1);
+}
+.weinvest-case__project-icon.active {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+}
+.weinvest-case__project-item {
+    position: relative;
+    width: 100%;
+    max-width: 765px;
+    margin: 0 auto;
+    color: #171829;
+}
+.weinvest-case__project-item p {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.9px;
+    color: #6d6e78;
+    font-family: 'aktivgrotesk-light', sans-serif;
+}
+.weinvest-case__project-title {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 36px;
+    line-height: 46px;
+    font-family: 'aktivgrotesk-bold', sans-serif;
+}
+
+.weinvest-case__challenge {
+    position: relative;
+    padding: 36px 15px 250px;
+    background: #ffffff;
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 60%,#f9f9f9 70%,#f7f7f7 70%,#f6f6f6 75%,#f4f4f4 75%,#efefef 82%,#efefef 100%);
+    background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 60%,#f9f9f9 70%,#f7f7f7 70%,#f6f6f6 75%,#f4f4f4 75%,#efefef 82%,#efefef 100%);
+}
+.weinvest-case__challenge:before {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 100%;
+    padding-bottom: 17.94%;
+    background: url(../img/white-wave.png) no-repeat;
+    background-size: contain;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    content: '';
+}
+.weinvest-case__challenge-head {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+    color: #171829;
+    text-align: center;
+}
+.weinvest-case__challenge-title {
+    margin-bottom: 14px;
+    font-size: 40px;
+    line-height: 59px;
+    font-family: 'aktivgrotesk-bold', sans-serif;
+}
+.weinvest-case__challenge-text {
+    margin-bottom: 50px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.9px;
+    font-family: 'aktivgrotesk-light', sans-serif;
+}
+.weinvest-case__challenge-link {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 103px;
+    font-size: 12px;
+    color: #171829;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    font-family: 'aktivgrotesk-bold', sans-serif;
+}
+.weinvest-case__challenge-link:after {
+    opacity: 1;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #00ebe1;
+    -webkit-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+    content: '';
+}
+.weinvest-case__challenge-link:hover:after {
+    opacity: 0;
+}
+.weinvest-case__challenge-pic {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    box-shadow: 0 0 80px 20px rgba( 0, 0, 0, 0.2 );
+}
+.weinvest-case__challenge-pic img {
+    display: block;
+    width: 100%;
+}
+
+.weinvest-case__logo {
+    position: relative;
+    background: url(../img/blue-wave.png) no-repeat;
+    background-size: cover;
+    background-position: center top;
+    text-align: center;
+    background-color: transparent;
+    margin-top: -320px;
+    padding-top: 274px;
+}
+.weinvest-case__logo-title {
+    margin-bottom: 15px;
+    font-size: 40px;
+    line-height: 59px;
+    color: #fff;
+    font-family: 'aktivgrotesk-bold', sans-serif;
+}
+.weinvest-case__logo-text {
+    max-width: 970px;
+    margin: 0 auto 145px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+    color: #fff;
+    font-family: 'aktivgrotesk-light', sans-serif;
+}
+.weinvest-case__logo-text a {
+    position: relative;
+    color: #fff;
+    font-family: 'aktivgrotesk-bold', sans-serif;
+}
+.weinvest-case__logo-text a:after {
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    height: 2px;
+    background: #fff;
+    -webkit-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+    content: '';
+}
+.weinvest-case__logo-text a:hover:after {
+    opacity: 0;
+}
+
+.weinvest-case__logo-new {
+    opacity: 0;
+    max-width: 400px;
+    margin: 0 auto 82px;
+    -webkit-transform: translateY(80px);
+    transform: translateY(80px);
+    -webkit-transition: transform .8s cubic-bezier(.165,.84,.44,1), opacity cubic-bezier(.165,.84,.44,1);
+    transition: transform .8s cubic-bezier(.165,.84,.44,1), opacity cubic-bezier(.165,.84,.44,1);
+}
+.weinvest-case__logo-new.active {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+.weinvest-case__logo-new img {
+    display: block;
+    width: 100%;
+}
+.weinvest-case__logo-example {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    max-width: 770px;
+    margin: 0 auto;
+    transform: translateY(50%);
+}
+.weinvest-case__logo-example:before,
+.weinvest-case__logo-example:after {
+    position: absolute;
+    bottom: 47.6%;
+    width: 146px;
+    height: 214px;
+    content: '';
+}
+.weinvest-case__logo-example:before {
+    left: -16.4%;
+    background: url(../img/bubble_left.png) no-repeat;
+    background-size: contain;
+}
+.weinvest-case__logo-example:after {
+    right: -16.5%;
+    background: url(../img/bubble_right.png) no-repeat;
+    background-size: contain;
+}
+.weinvest-case__logo-example div {
+    position: relative;
+    width: 48.1%;
+    padding-bottom: 48.1%;
+    background: #fff;
+    box-shadow: 0 26px 30px 0 rgba(0, 0, 0, 0.06);
+}
+.weinvest-case__logo-example div:nth-child(1) {
+    background: #171829;
+}
+.weinvest-case__logo-example img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 68%;
+    max-width: 159px;
+    height: auto;
+}
+.weinvest-case__old {
+    padding: 210px 0 100px;
+    background: #efefef;
+    text-align: center;
+}
+.weinvest-case__old img {
+    display: block;
+    margin: 0 auto;
+    width: 260px;
+    height: auto;
+}
+.weinvest-case__old-title {
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 68px;
+    font-family: 'aktivgrotesk-bold', sans-serif;
+}
+.weinvest-case__example {
+    padding: 100px 0;
+    background: #efefef;
+}
+.weinvest-case__example-info {
+    margin-bottom: 91px;
+}
+.weinvest-case__example-info div:nth-child(2) {
+    padding-top: 15px;
+}
+.weinvest-case__example-title {
+    margin-bottom: 10px;
+    font-size: 46px;
+    line-height: 50px;
+    color: #171829;
+    font-family: 'aktivgrotesk-bold', sans-serif;
+}
+.weinvest-case__example-subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    color: #6d6e78;
+    letter-spacing: 0.9px;
+    font-family: 'aktivgrotesk-light', sans-serif;
+}
+.weinvest-case__example-text {
+    margin-bottom: 22px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #171829;
+    letter-spacing: 0.8px;
+    font-family: 'aktivgrotesk-light', sans-serif;
+}
+.weinvest-case__example-pics {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1037px;
+}
+
+.pic-example {
+    border-radius: 5px;
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.1);
+}
+.pic-example > div {
+    overflow: hidden;
+    padding-top: 61.59%;
+    border-radius: 7px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.pic-example img {
+    display: none;
+}
+.pic-example__swiper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.pic-example__swiper > div {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    -webkit-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+}
+.pic-example__line {
+    position: absolute;
+    background: #fff;
+    width: 6px;
+    top: 0;
+    bottom: 0;
+}
+.pic-example__swiper.animation,
+.pic-example__line.animation,
+.pic-example__control.animation{
+    -webkit-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+}
+.pic-example__control {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 42px;
+    height: 73px;
+    margin-left: 3px;
+    background-image: url("../img/handle.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.pic-example__control span {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 2px;
+    bottom: 2px;
+    width: 19px;
+}
+.pic-example__note {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 3;
+    width: 100%;
+    left: 0;
+    margin: 43px 0 0;
+    font-size: 11px;
+    line-height: 24px;
+    color: #171829;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-family: 'aktivgrotesk-bold', sans-serif;
+}
+.pic-example__note mark {
+    color: #00d1de;
+}
+.pic-example__note p {
+    position: absolute;
+    display: inline-block;
+    width: 0;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.pic-example__note p:nth-child(1) {
+    left: -22px;
+}
+.pic-example__note p:nth-child(2) {
+    right: -22px;
+}
+.weinvest-case__connexion {
+    position: relative;
+    padding: 110px 0 170px;
+    background: #efefef;
+    margin-top: -1px;
+}
+.weinvest-case__connexion-title {
+    margin-bottom: 22px;
+    font-size: 36px;
+    line-height: 46px;
+    color: #171829;
+    white-space: pre-line;
+    font-family: 'aktivgrotesk-bold', sans-serif;
+    letter-spacing: -0.2px;
+}
+.weinvest-case__connexion-text {
+    max-width: 570px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #6d6e78;
+    letter-spacing: 1.3px;
+}
+.weinvest-case__connexion-pic.dapper {
+    opacity: 1;
+}
+.weinvest-case__connexion-pic {
+    display: none;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: transform .8s cubic-bezier(.165,.84,.44,1), opacity cubic-bezier(.165,.84,.44,1);
+    transition: transform .8s cubic-bezier(.165,.84,.44,1), opacity cubic-bezier(.165,.84,.44,1);
+}
+.weinvest-case__connexion-pic.active {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+@media (min-width: 769px) {
+
+    .weinvest-case__hero {
+        padding-top: 244px;
+    }
+    .weinvest-case__hero .btn {
+        margin-bottom: 80px;
+    }
+    .weinvest-case__hero-title {
+        font-size: 60px;
+        line-height: 76px;
+    }
+    .weinvest-case__mac {
+        width: 80.2%;
+        padding-bottom: 47%;
+    }
+    .weinvest-case__mac:before {
+        left: -46px;
+    }
+    .weinvest-case__mac:after {
+        right: -57px;
+    }
+    .weinvest-case__mac img {
+        left: 50.5%;
+    }
+    .weinvest-case__project {
+        padding: 219px 15px 298px;
+    }
+    .weinvest-case__project-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 43px;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        box-shadow: 30px 30px 40px rgba(0,0,0, .04);
+        background: #fff;
+    }
+    .weinvest-case__project-icon svg {
+        position: absolute;
+        left: 62%;
+        top: 39%;
+        width: 123%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .weinvest-case__project-icon:before {
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        bottom: -20px;
+        left: -20px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.302);
+        content: '';
+    }
+    .weinvest-case__project-item {
+        padding-left: 297px;
+    }
+
+    .weinvest-case__challenge-title {
+        font-size: 60px;
+        line-height: 76px;
+    }
+    .weinvest-case__challenge-link {
+        margin-bottom: 137px;
+        font-size: 15px;
+    }
+    .weinvest-case__logo {
+        margin-top: -303px;
+        padding-top: 377px;
+    }
+    .weinvest-case__logo-title {
+        font-size: 60px;
+        line-height: 76px;
+    }
+    .weinvest-case__logo-text {
+        margin: 0 auto 191px;
+    }
+    .weinvest-case__logo-new img {
+        display: block;
+        width: 100%;
+    }
+
+    .weinvest-case__logo-example div:nth-child(1) {
+    }
+    .weinvest-case__old {
+        padding: 305px 0 58px;
+    }
+    .weinvest-case__example {
+        padding: 100px 0;
+    }
+    .weinvest-case__example-info {
+        display: flex;
+        justify-content: space-between;
+    }
+    .weinvest-case__example-info div {
+        width: 48%;
+    }
+    .weinvest-case__example-info div:nth-child(2) {
+        width: 40.1%;
+    }
+    .weinvest-case__example-title {
+        font-size: 48px;
+        line-height: 76px;
+    }
+    .weinvest-case__example-pics {
+        width: 90%;
+    }
+    .weinvest-case__connexion {
+        padding: 182px 0 330px;
+    }
+    .weinvest-case__connexion-title {
+        max-width: 50%;
+    }
+    .weinvest-case__connexion-text {
+        width: 50%;
+        max-width: 570px;
+    }
+    .weinvest-case__connexion-pic {
+        display: block;
+        position: absolute;
+        z-index: 3;
+        top: 177px;
+        right: -10px;
+        width: 44.5%;
+        padding-bottom: 47.7%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        /*box-shadow: 26px 26px 30px rgba(0,0,0, .6);*/
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+
+    .weinvest-case__mac img {
+        left: 50%;
+    }
+    .weinvest-case__project {
+        padding: 219px 15px 531px;
+    }
+
+    .weinvest-case__old {
+        padding: 305px 0 100px;
+    }
+    .weinvest-case__example-pics {
+        width: 100%;
+    }
+    .weinvest-case__connexion {
+        padding: 182px 0 415px;
+    }
+    .weinvest-case__connexion-pic {
+        top: 80px;
+    }
+}
