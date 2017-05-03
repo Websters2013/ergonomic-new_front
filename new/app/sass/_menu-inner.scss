@@ -7,13 +7,10 @@
   height: 100%;
   text-align: center;
   background:  #2a2a32;
-  -webkit-transition: left 0.5s ease-in-out;
-  transition: left 0.5s ease-in-out;
+  -webkit-transition: left 0.5s ease-in-out,opacity 0.3s ease-in-out;
+  transition: left 0.5s ease-in-out,opacity 0.3s ease-in-out;
   z-index: 2;
 
-  .btn {
-    color: $main-white-color;
-  }
   li {
     font-size: 14px;
     line-height: 56px;
@@ -28,7 +25,7 @@
       transition: color 300ms ease-in-out 50ms;
 
       &.active,
-      &:hover{
+      &:hover {
         color: #96c11f;
       }
     }
@@ -58,6 +55,8 @@
     background: none;
     border: none;
     -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
     user-select: none;
 
     span {
@@ -80,9 +79,9 @@
         width: 100%;
         height: 100%;
         background: #73797e;
+        content: '';
         -webkit-transition: -webkit-transform 0.3s;
         transition: transform 0.3s;
-        content: '';
       }
       &:before {
         -webkit-transform: translateY(-220%);
@@ -92,11 +91,12 @@
         -webkit-transform: translateY(220%);
         transform: translateY(220%);
       }
-      &_opened {
+    }
+    &_opened {
 
-        span {
-          background-color: transparent;
-        }
+      span {
+        background-color: transparent;
+
         &:before {
           -webkit-transform: translateY(0) rotate(45deg);
           transform: translateY(0) rotate(45deg);
@@ -119,36 +119,77 @@
 
   .menu {
     position: absolute;
-    top: -3px;
+    top: 56px;
     left: auto;
-    height: 146px;
-    right: 16px;
+    height: auto;
+    right: 0;
     width: auto;
     bottom: auto;
-    background: transparent;
     text-align: left;
-    -webkit-transition: top 0.5s ease-in-out;
-    transition: top 0.5s ease-in-out;
+    background: transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-animation-duration: 500ms;
+    animation-duration: 500ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-transition: -webkit-transform 500ms ease-in-out;
+    transition: transform 500ms ease-in-out;
 
     li {
       display: inline-block;
       vertical-align: middle;
-      color: #888888;
+      margin: 0 29px;
+      color: rgba(255,255,255,.4);
       font-size: 11px;
-      margin-left: 35px;
 
       a {
-        color: #9A9A9A;
-        font-weight: 700;
+        color: rgba(255,255,255,.7);
+
+        &:hover,
+        &.active {
+          color: rgba(255,255,255,1);
+        }
       }
     }
     .btn {
       display: inline-block;
       vertical-align: middle;
-      color: #181929;
     }
     &_opened {
       left: auto;
+    }
+    &_fixed {
+      position: fixed;
+      top: 0;
+      right: 0 !important;
+      left: 0;
+      height: 120px;
+      background: #fff;
+      text-align: center;
+
+      li {
+        color: #999;
+
+        a {
+          color: #999;
+
+          &:hover,
+          &.active {
+            color: #96c11f;
+          }
+        }
+      }
+      .menu__wrap{
+        padding-top: 31px;
+      }
+      .btn-ellipse{
+        position: relative;
+      }
+    }
+    &_fixed-out {
+      -webkit-transform: translateY( -120px );
+      transform: translateY( -120px );
     }
     &_inner {
       width: 100%;
@@ -161,18 +202,15 @@
         right: 0;
         top: -2px;
       }
-      &.menu_fixed {
+      &.menu_fixed .btn_ellipse {
+        position: relative;
+        vertical-align: top;
+        border-color: #96c11f;
+        box-shadow: none;
 
-        .btn_ellipse {
-          position: relative;
-          vertical-align: top;
-          border-color: #96c11f;
-          box-shadow: none;
-
-          &:hover {
-            background: #96c11f;
-            color: #fff;
-          }
+        &:hover {
+          background: #96c11f;
+          color: #fff;
         }
       }
     }
@@ -182,7 +220,6 @@
 
       > ul {
         display: inline-block;
-        margin: 0 25px 0 0;
         vertical-align: middle;
       }
     }
@@ -190,6 +227,7 @@
       display: none;
     }
   }
+  /* --------------- /menu --------------- */
 }
 
 @media (min-width: $desktop) {
@@ -204,17 +242,6 @@
 
 @media (min-width: $desktop-full) {
 
-  .menu {
 
-    li {
-      margin-left: 74px;
-    }
-    &__wrap {
-
-      > ul {
-        margin: 0 75px 0 0;
-      }
-    }
-  }
 }
 

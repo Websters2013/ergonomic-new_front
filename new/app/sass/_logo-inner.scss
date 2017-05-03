@@ -1,0 +1,32 @@
+
+.logo {
+  text-align: center;
+  padding: 30px 0;
+  display: block;
+}
+
+@media (min-width: $tablet-landscape) {
+
+  .logo {
+    padding: 0;
+    position: absolute;
+    z-index: 3;
+    text-align: left;
+    top: 61px;
+    left: 0;
+    -webkit-transition: top 1s ease-in-out, opacity 0.3s ease-in-out;
+    transition: top 1s ease-in-out, opacity 0.3s ease-in-out;
+
+    > img {
+      width: 222px;
+      height: auto;
+    }
+  }
+}
+
+@media (min-width: $desktop-full) {
+
+  .logo {
+    left: 0;
+  }
+}

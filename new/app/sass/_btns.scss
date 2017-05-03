@@ -1,0 +1,138 @@
+.btn {
+  border: 2px solid #96c11f;
+  border-radius: 3px;
+  display: inline-block;
+  -webkit-backface-visibility: hidden;
+  position: relative;
+  height: 54px;
+  padding: 0 29px 0 28px;
+  color: #96c11f;
+  font-size: 14px;
+  text-transform: uppercase;
+  -webkit-transition: color 0.4s, background .4s;
+  transition: color 0.4s, background .4s;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  @include proxima-semibold();
+
+  > span {
+    position: relative;
+    z-index: 2;
+  }
+  &:hover {
+    color: #fff;
+
+    &:before {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #96c11f;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transform: scale3d(0.7, 1, 1);
+    transform: scale3d(0.7, 1, 1);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+    transition: transform 0.4s, opacity 0.4s;
+  }
+  &_ellipse {
+    height: 60px;
+    padding: 0 38px;
+    border-radius: 60px;
+    border-color: #fff;
+    font-size: 11px;
+    color: #000;
+    background: #fff;
+    font-family: 'aktivgrotesk-bold', sans-serif;
+    letter-spacing: 3.1px;
+    line-height: 57px !important;
+
+    &:before,
+    &:after {
+      display: none;
+    }
+    &:hover {
+      background: transparent;
+      color: #fff;
+    }
+  }
+  &_ellipse-shadow {
+    box-shadow: 0 16px 30px 0 rgba(0, 0, 0, 0.06);
+  }
+  &_ellipse-white {
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+
+    &:hover {
+      background: #fff;
+      color: #000;
+    }
+  }
+  &_ellipse-green {
+    background: transparent;
+    border-color: #96c11f;
+    color: #fff;
+
+    &:hover {
+      background: #96c11f;
+      color: #fff;
+    }
+  }
+  &_ellipse-green-2 {
+    background: transparent;
+    border-color: #96c11f;
+    color: #181929;
+
+    &:hover {
+      background: #96c11f;
+      color: #fff;
+    }
+  }
+  &_ellipse-green-fill {
+    background: #96c11f;
+    border-color: #96c11f;
+    color: #fff;
+
+    &:hover {
+      background: transparent;
+    }
+  }
+}
+a.btn {
+  line-height: 52px;
+}
+
+@media (min-width: $tablet-portrait) {
+
+
+}
+
+@media (min-width: $tablet-landscape) {
+
+
+}
+
+@media (min-width: $desktop) {
+
+
+}
+
+@media (min-width: $desktop-wide) {
+
+
+}
+
+@media (min-width: $desktop-full) {
+
+
+}
+

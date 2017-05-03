@@ -1,0 +1,129 @@
+
+.testimonials {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  color: $main-white-color;
+
+  h2 {
+    font-weight: 400;
+    margin-bottom: 30px;
+
+    span{
+      position: relative;
+      display: inline;
+      font-size: 24px;
+      font-weight: 900;
+
+      &:after {
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 60px;
+        height: 3px;
+        background: $main-white-color;
+        content: '';
+      }
+    }
+  }
+  blockquote {
+
+    > div {
+
+      > span {
+        display: inline-block;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        @include proxima-semibold();
+
+        span {
+         @include museo100();
+        }
+      }
+    }
+  }
+  p{
+    overflow: hidden;
+    max-height: 278px;
+    line-height: 25px;
+    font-size: 20px;
+    @include proxima-thin();
+  }
+  &__card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+  }
+  &__card-wrap {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+}
+
+@media (min-width: $tablet-portrait) {
+
+
+}
+
+@media (min-width: $tablet-landscape) {
+
+  .testimonials {
+    height: 544px;
+
+    blockquote {
+      position: relative;
+      display: inline-block;
+      padding-left: 330px;
+      text-align: left;
+      width: 804px;
+
+      > div{
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 18px;
+
+      }
+    }
+    h2 {
+      margin-bottom: 88px;
+
+      span:after {
+        bottom: -28px;
+      }
+    }
+    p{
+      position: relative;
+      top: -14px;
+      max-height: 324px;
+      line-height: 54px;
+      font-size: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+
+
+}
+
+@media (min-width: $desktop-wide) {
+
+
+}
+
+@media (min-width: $desktop-full) {
+
+  .testimonials {
+
+    blockquote {
+      width: 1170px;
+      padding-left: 500px;
+    }
+  }
+}
+

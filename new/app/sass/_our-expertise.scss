@@ -1,0 +1,210 @@
+.our-expertise {
+  margin-bottom: 60px;
+
+  &__header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__title {
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #96c11f;
+
+
+    span {
+      color: #999;
+      padding-top: 11px;
+      display: block;
+      font-size: 24px;
+    }
+  }
+  &__card {
+    position: relative;
+    display: block;
+    width: 310px;
+    margin: 0 auto 40px;
+    padding-top: 157px;
+    background: rgba(255,255,255,0.01);
+    text-align: center;
+    font-size: 18px;
+    @include museo100();
+    color: #999999;
+
+    &:after,
+    &:before {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      top: 0;
+      left: 50%;
+      margin-left: -60px;
+      -webkit-transition: opacity 500ms ease-in-out;
+      transition: opacity 500ms ease-in-out;
+      content: '';
+    }
+    &:before {
+      background: url("../img/expertize.png");
+    }
+    &_web:before {
+      background-position: left 0;
+    }
+    &_marketing:before {
+      background-position: center 0;
+    }
+    &_branding:before {
+      background-position: right 0;
+    }
+    h3{
+      font-weight: 400;
+      color: #333;
+      margin-bottom: 72px;
+      font-size: 167.88888889%;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        background: #96c11f;
+        top: 64px;
+        left: 50%;
+        margin-left: -20px;
+      }
+    }
+    p{
+      line-height: 30px;
+      background: rgba(255,255,255,0.01);
+    }
+  }
+}
+@media (min-width: $tablet-portrait) {
+
+
+}
+
+@media (min-width: $tablet-landscape) {
+
+  .our-expertise {
+
+    &__header {
+      display: table;
+      width: 1024px;
+      margin: 0 auto 136px;
+      text-align: center;
+
+      > div {
+        display: table-cell;
+        vertical-align: middle;
+        width: 50%;
+      }
+    }
+    &__title {
+      display: inline-block;
+      margin-bottom: 0;
+      padding-left: 106px;
+      text-align: left;
+    }
+    &__content {
+      text-align: justify;
+      padding-top: 43px;
+      padding-bottom: 60px;
+      max-width: 1110px;
+      margin: 0 auto;
+
+      &:after {
+        display: inline-block;
+        width: 100%;
+        content: '';
+      }
+      > div{
+        display: inline-block;
+        width: 310px;
+      }
+    }
+    &__card {
+      -webkit-transform: translate(0,40px);
+      transform: translate(0,40px);
+      -webkit-transition: -webkit-transform 500ms ease-in-out;
+      transition: transform 500ms ease-in-out;
+
+      h3 {
+        -webkit-transform: translate(0,43px);
+        transform: translate(0,43px);
+        -webkit-transition: -webkit-transform 500ms ease-in-out;
+        transition: transform 500ms ease-in-out;
+
+        &:after{
+          -webkit-transform: translate(0,-104px);
+          transform: translate(0,-104px);
+          -webkit-transition: -webkit-transform 500ms ease-in-out;
+          transition: transform 500ms ease-in-out;
+        }
+      }
+      p {
+        opacity: 0;
+        -webkit-transition: opacity 500ms ease-in-out;
+        transition: opacity 500ms ease-in-out;
+      }
+      &:after {
+        background: url("../img/expertize.png");
+        opacity: 1;
+      }
+      &:before {
+        opacity: 0;
+      }
+      &_web:after {
+        background-position: left bottom;
+      }
+      &_marketing:after {
+        background-position: center bottom;
+      }
+      &_branding:after {
+        background-position: right bottom;
+      }
+      &:hover {
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0);
+
+        h3,
+        h3:after{
+          -webkit-transform: translate(0,0);
+          transform: translate(0,0);
+        }
+        p,
+        &:before {
+          opacity: 1;
+        }
+        &:after{
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+
+}
+
+@media (min-width: $desktop-wide) {
+
+
+}
+
+@media (min-width: $desktop-full) {
+
+  .our-expertise {
+
+    &__header {
+      width: 1749px;
+
+      .btn {
+        position: relative;
+        left: 79px;
+      }
+    }
+  }
+}
+

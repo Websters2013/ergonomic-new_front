@@ -1,0 +1,194 @@
+
+.work {
+  background: #f7f7f7;
+  text-align: center;
+  padding-top: 173px;
+  padding-bottom: 185px;
+
+  &__title {
+    color: #96c11f;
+    font-size: 48px;
+    font-weight: 400;
+    @include museo100();
+    margin-bottom: 30px;
+
+    span {
+      display: block;
+      font-size: 50%;
+      color: #999;
+      padding-top: 9px;
+      @include proxima-thin();
+    }
+  }
+  &__example {
+    max-width: 482px;
+    width: 80%;
+    margin: 0 auto 30px;
+
+    > div {
+      padding-top: 187.13692946%;
+      position: relative;
+      background-size: contain;
+      background-position: center;
+    }
+    img {
+      display: none;
+    }
+
+  }
+  &__example-swiper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+
+    > div {
+      background-size: contain;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  &__example-line {
+    position: absolute;
+    background: #96c11f;
+    width: 4px;
+    top: 5.4%;
+    bottom: 5.7%;
+  }
+  &__example-control {
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  margin: -28px 0 0 -26px;
+  background: #96c11f url("../img/work__example-control.png") no-repeat center;
+  cursor: pointer;
+}
+  &__info {
+    text-align: left;
+    background: url("../img/work__info.png") no-repeat 15px 0;
+    padding: 110px 15px 19px;
+    font-size: 30px;
+    @include proxima-thin();
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+
+    h2{
+      font-weight: 400;
+      color: #333;
+      margin-bottom: 62px;
+      position: relative;
+      @include museo100();
+
+      &:after {
+        content: '';
+        position: absolute;
+        background: #96c11f;
+        width: 40px;
+        height: 4px;
+        bottom: -29px;
+        left: 1px;
+      }
+    }
+    p {
+      font-size: 60%;
+      color: #999;
+      line-height: 30px;
+      margin-bottom: 37px;
+    }
+    ol {
+      font-size: 60%;
+      @include proxima-semibold();
+      color: #96c11f;
+      counter-reset: work-ol;
+
+      li {
+        counter-increment: work-ol;
+        line-height: 40px;
+
+        &:before{
+          content: counter(work-ol)'.';
+          color: #999;
+          @include proxima-thin();
+          margin-right: 5px;
+        }
+      }
+      a {
+        color: #96c11f;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-portrait) {
+
+
+}
+
+@media (min-width: $tablet-landscape) {
+
+  .work {
+
+    &__content {
+      width: 980px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+
+      > div {
+        width: 482px;
+      }
+    }
+    &__example {
+      width: 482px;
+    }
+    &__title {
+      margin-bottom: 125px;
+    }
+    &__info {
+      padding-left: 0;
+      padding-right: 0;
+      background-position: 1px 0;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+
+
+}
+
+@media (min-width: $desktop-wide) {
+
+
+}
+
+@media (min-width: $desktop-full) {
+
+  .work {
+
+    &__content {
+      width: 1084px;
+      position: relative;
+      left: 54px;
+    }
+  }
+
+}
+

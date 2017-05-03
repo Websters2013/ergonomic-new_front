@@ -1,0 +1,95 @@
+
+.cd-headline {
+
+  &.slide {
+    overflow: hidden;
+    @include museo100();
+    font-weight: 100;
+
+    b {
+      opacity: 0;
+
+      &.is-visible {
+        opacity: 1;
+        -webkit-animation: slide-in 0.9s;
+        animation: slide-in 0.9s;
+      }
+      &.is-hidden {
+        -webkit-animation: slide-out 0.9s;
+        animation: slide-out 0.9s;
+      }
+    }
+    span {
+      padding: 0;
+    }
+    .cd-words-wrapper {
+      vertical-align: middle;
+      padding: 0 0 0 1px;
+      line-height: 1;
+    }
+  }
+}
+.cd-words-wrapper {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  top: -4px;
+  text-align: left;
+
+  b {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+
+    &.is-visible {
+      position: relative;
+    }
+  }
+}
+//.cd-words-wrapper {
+//
+//}
+//.cd-words-wrapper b {
+//  display: inline-block;
+//  position: absolute;
+//  white-space: nowrap;
+//  left: 0;
+//}
+.no-js {
+
+  .cd-words-wrapper b {
+    opacity: 0;
+
+    &.is-visible {
+      opacity: 1;
+    }
+  }
+}
+
+@media (min-width: $tablet-portrait) {
+
+
+}
+
+@media (min-width: $tablet-landscape) {
+
+
+}
+
+@media (min-width: $desktop) {
+
+
+}
+
+@media (min-width: $desktop-wide) {
+
+
+}
+
+@media (min-width: $desktop-full) {
+
+
+}
+
