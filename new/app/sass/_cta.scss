@@ -1,0 +1,239 @@
+.cta {
+
+  &__grid {
+    position: relative;
+  }
+  &__item {
+    display: block;
+    width: 100%;
+    position: relative;
+    padding-bottom: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    @include museo100();
+    overflow: hidden;
+    -webkit-transition: padding 500ms ease-in-out;
+    transition: padding 500ms ease-in-out;
+
+    .btn {
+      @include proxima-thin();
+      text-transform: none;
+      font-size: 20px;
+      line-height: 20px;
+      border: 2px solid #96c11f;
+      color: #fff;
+      background: #96c11f;
+      padding: 19px 20px;
+      height: 60px;
+
+      &:before{
+        background: #fff;
+      }
+      &:hover {
+        color: #96c11f;
+      }
+    }
+    h2 {
+      color: #96c11f;
+      font-size: 34px;
+      line-height: 41px;
+      font-weight: 400;
+      margin: 0 0 8px;
+    }
+    p {
+      color: #999999;
+      font-size: 15px;
+      line-height: 17px;
+      margin: 0 0 30px;
+      @include proxima-thin();
+    }
+  }
+  &__item-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+
+    > div {
+      display: table;
+      height: 100%;
+      width: 100%;
+
+      >div {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+        padding: 0 0 10px 0;
+        -webkit-transition: padding 500ms ease-in-out;
+        transition: padding 500ms ease-in-out;
+      }
+    }
+  }
+  &_lets-work {
+
+    .btn{
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 14px;
+      @include proxima-semibold();
+      border: 2px solid #fff;
+      background: transparent;
+      height: 54px;
+      padding: 19px 28px;
+      -webkit-transition: bottom 500ms ease-in-out,  opacity 500ms ease-in-out;
+      transition: bottom 500ms ease-in-out,  opacity 500ms ease-in-out;
+    }
+    h2,
+    p {
+      color: #fff;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(150,193,31,0.85);
+      -webkit-transition: background 500ms ease-in-out;
+      transition: background 500ms ease-in-out;
+    }
+    &:hover {
+
+      &:after{
+        background: rgba(150,193,31,0.9);
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .cta {
+
+    &__grid {
+
+      > div {
+        width: 100%;
+        padding-bottom: 42.7083333333%;
+        position: relative;
+      }
+    }
+    &__item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding-bottom: 21.35416667%;
+
+      &:nth-child(2){
+        top: 50%;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-landscape) {
+
+  .cta {
+
+    &__grid {
+
+      > div {
+        padding-bottom: 21.35416667%;
+      }
+    }
+    &__item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      padding-bottom: 21.35416667%;
+
+      &:nth-child(2) {
+        top: 0;
+        left: 50%;
+      }
+      h2 {
+        font-size: 46px;
+        line-height: 51px;
+      }
+      p {
+        font-size: 23px;
+        line-height: 27px;
+        margin: 0 0 54px;
+      }
+      .btn {
+        font-size: 25px;
+        line-height: 25px;
+        padding: 13px 29px;
+        height: 54px;
+      }
+    }
+    &_lets-work {
+
+      .btn {
+        position: absolute;
+        left: 50%;
+        margin-left: -100px;
+        opacity: 0;
+        bottom: 0;
+        font-size: 14px;
+        line-height: 14px;
+        height: 54px;
+        padding: 19px 28px;
+      }
+      p {
+        margin-bottom: 0;
+      }
+      &:hover {
+
+        .btn{
+          bottom: 10%;
+          opacity: 1;
+        }
+        .cta__item-title {
+
+          > div > div {
+            padding: 0 0 117px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .cta {
+
+    &__item {
+
+      &:not(.cta_lets-work) {
+
+        .btn {
+          font-size: 30px;
+          line-height: 30px;
+          padding: 26px 37px;
+          height: 85px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-wide) {
+
+
+}
+
+@media (min-width: $desktop-full) {
+
+
+}
+

@@ -1,0 +1,100 @@
+.process {
+  background: #2a2a32;
+  position: relative;
+  color: #fff;
+  font-size: 48px;
+  text-align: center;
+  @include proxima-thin();
+  padding-top: 176px;
+  padding-bottom: 173px;
+
+  .triangle__item{
+    border-color: transparent transparent #2a2a32 transparent;
+  }
+  &__title {
+    font-weight: 400;
+    margin-bottom: 30px;
+    @include museo100();
+  }
+  &__items {
+    display: inline-block;
+    font-size: 75%;
+
+    li{
+      margin-bottom: 30px;
+
+      &:nth-child(1) div{
+        background-image: url("../img/process1.png");
+      }
+      &:nth-child(2) div{
+        background-image: url("../img/process2.png");
+      }
+      &:nth-child(3) div{
+        background-image: url("../img/process3.png");
+      }
+    }
+    div {
+      color: #fff;
+      display: inline-block;
+      width: 309px;
+      padding-top: 240px;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+    a {
+
+      &:hover {
+
+        span {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-portrait) {
+
+
+}
+
+@media (min-width: $tablet-landscape) {
+
+  .process {
+
+    &__items {
+      text-align: center;
+
+      li {
+        display: inline-block;
+      }
+    }
+    &__title {
+      margin-bottom: 150px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+
+
+}
+
+@media (min-width: $desktop-wide) {
+
+
+}
+
+@media (min-width: $desktop-full) {
+
+  .process {
+
+    &__items {
+
+      li {
+        margin: 0 41px;
+      }
+    }
+  }
+}
+

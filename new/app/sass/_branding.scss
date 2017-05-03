@@ -1,0 +1,148 @@
+
+.branding {
+  background: #f7f7f7;
+  position: relative;
+  padding: 100px 15px;
+  text-align: center;
+
+  .triangle__item{
+    border-color: transparent transparent #f7f7f7 transparent;
+  }
+  &__wrap {
+    position: relative;
+    z-index: 3;
+  }
+  &__info {
+    text-align: left;
+    background: url("../img/branding__info.png") no-repeat 15px 0;
+    padding: 110px 15px 19px;
+    font-size: 30px;
+    @include proxima-thin();
+    max-width: 375px;
+    display: inline-block;
+
+    h2{
+      @include museo100();
+      color: #333;
+      margin-bottom: 62px;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        background: #96c11f;
+        width: 40px;
+        height: 4px;
+        bottom: -29px;
+        left: 1px;
+      }
+    }
+    p {
+      font-size: 60%;
+      color: #999;
+      line-height: 30px;
+      margin-bottom: 37px;
+    }
+    ol {
+      font-size: 60%;
+      @include museo500();
+      color: #96c11f;
+      counter-reset: work-ol;
+
+      li {
+        counter-increment: work-ol;
+        line-height: 40px;
+
+        &:before{
+          content: counter(work-ol)'.';
+          color: #999;
+          @include proxima-thin();
+          margin-right: 5px;
+        }
+      }
+      a {
+        color: #96c11f;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-portrait) {
+
+
+}
+
+@media (min-width: $tablet-landscape) {
+
+  .branding {
+    padding: 225px 0 399px;
+
+    .paralax img:nth-child(1){
+      left: -156px;
+      top: 417px;
+    }
+    .paralax img:nth-child(2){
+      left: 210px;
+      top: 708px;
+    }
+    .paralax img:nth-child(3){
+      left: 49px;
+      top: 171px;
+    }
+    &__wrap {
+      margin: 0 auto;
+      width: 974px;
+      text-align: right;
+    }
+    &__info {
+      text-align: left;
+      background: url("../img/branding__info.png") no-repeat 2px 0;
+      padding: 117px 0 19px;
+      font-size: 30px;
+      @include proxima-thin();
+      max-width: 375px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .branding {
+
+    .paralax img:nth-child(1){
+      left: 37px;
+    }
+    .paralax img:nth-child(2){
+      left: 391px;
+    }
+    .paralax img:nth-child(3){
+      left: 230px;
+    }
+  }
+}
+
+@media (min-width: $desktop-wide) {
+
+
+}
+
+@media (min-width: $desktop-full) {
+
+  .branding {
+
+    .paralax img:nth-child(1){
+      left: 256px;
+    }
+    .paralax img:nth-child(2){
+      left: 610px;
+    }
+    .paralax img:nth-child(3){
+      left: 449px;
+    }
+  }
+}
+

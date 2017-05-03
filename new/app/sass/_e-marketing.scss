@@ -1,0 +1,140 @@
+
+.e-marketing {
+  background: #96c11f;
+  position: relative;
+  padding: 100px 15px;
+
+  .triangle__item{
+    border-color: transparent transparent #96c11f transparent;
+  }
+  &__wrap{
+    position: relative;
+    z-index: 3;
+  }
+  &__info {
+    text-align: left;
+    background: url("../img/e-marketing__info.png") no-repeat 2px 0;
+    padding: 110px 15px 19px;
+    font-size: 30px;
+    @include proxima-thin();
+    max-width: 375px;
+    margin: 0 auto;
+
+    h2{
+     @include museo100();
+      color: #fff;
+      margin-bottom: 62px;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        background: #fff;
+        width: 40px;
+        height: 4px;
+        bottom: -29px;
+        left: 1px;
+      }
+    }
+    p {
+      font-size: 60%;
+      color: #fff;
+      line-height: 30px;
+      margin-bottom: 37px;
+    }
+    ol {
+      font-size: 60%;
+      @include proxima-semibold();
+      color: #fff;
+      counter-reset: work-ol;
+
+      li {
+        counter-increment: work-ol;
+        line-height: 40px;
+
+        &:before{
+          content: counter(work-ol)'.';
+          color: #fff;
+          @include proxima-thin();
+          margin-right: 5px;
+        }
+      }
+      a {
+        color: #fff;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-portrait) {
+
+
+}
+
+@media (min-width: $tablet-landscape) {
+
+  /* --------------- e-marketing --------------- */
+  .e-marketing {
+    padding: 242px 0 411px;
+
+    .paralax img:nth-child(1){
+      right: 127px;
+      top: 201px;
+    }
+    .paralax img:nth-child(2){
+      right: -94px;
+      top: 672px;
+    }
+    .paralax img:nth-child(3){
+      right: -310px;
+      top: 100px;
+    }
+    &__wrap {
+      margin: 0 auto;
+      width: 1000px;
+    }
+    &__info {
+      text-align: left;
+      background: url("../img/e-marketing__info.png") no-repeat 2px 0;
+      padding: 120px 0 19px;
+      font-size: 30px;
+      font-family: "proximanova-thin", sans-serif;
+      max-width: 375px;
+      margin: 0 0;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+
+
+}
+
+@media (min-width: $desktop-wide) {
+
+
+}
+
+@media (min-width: $desktop-full) {
+
+  .e-marketing {
+
+    .paralax img:nth-child(1){
+      right: 437px;
+    }
+    .paralax img:nth-child(2){
+      right: 216px;
+    }
+    .paralax img:nth-child(3){
+      right: 0;
+    }
+    &__wrap {
+      width: 1175px;
+    }
+  }
+}
+

@@ -1,0 +1,125 @@
+
+.gallery{
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #999999;
+  @include proxima-thin();
+  background: #fff;
+
+  >div {
+    max-width: 1173px;
+    position: relative;
+    margin: 0 auto;
+    padding: 30px 0 0;
+  }
+  &__description {
+
+    p {
+      margin: 0 0 33px;
+
+      &:first-child {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+  }
+  &__wrap {
+
+    h2 {
+      color: #999999;
+      position: relative;
+      @include proxima-thin();
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      padding: 0 0 20px;
+      margin: 0 0 20px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 4px;
+        background: #a6ca51;
+        bottom: 0;
+        left: 0;
+      }
+      span {
+        color: #a6ca51;
+        font-size: 28px;
+        line-height: 32px;
+        display: block;
+        @include museo500();
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-portrait) {
+
+
+}
+
+@media (min-width: $tablet-landscape) {
+
+
+}
+
+@media (min-width: $desktop) {
+
+  .gallery{
+    font-size: 18px;
+    line-height: 36px;
+
+    > div{
+      padding: 165px 0 122px;
+
+      > div{
+        display: inline-block;
+        vertical-align: top;
+        width: 40%;
+      }
+    }
+    .gallery__wrap{
+      width: 59%;
+      padding: 9px 0 0 129px;
+    }
+    &__description {
+
+      p {
+
+        &:first-child {
+          font-size: 22px;
+          line-height: 44px;
+        }
+      }
+    }
+    &__wrap {
+
+      h2 {
+        font-size: 24px;
+        line-height: 27px;
+        padding: 0 0 37px;
+        margin: 0 0 80px;
+
+        span {
+          font-size: 36px;
+          line-height: 38px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-wide) {
+
+
+}
+
+@media (min-width: $desktop-full) {
+
+
+}
+
