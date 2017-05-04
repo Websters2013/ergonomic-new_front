@@ -1,0 +1,104 @@
+.join-project{
+
+  .treasury__grid-title h2 {
+    font-size: 30px;
+    color: #fff;
+    @include museo100();
+    margin-bottom: 5px;
+    white-space: nowrap;
+  }
+  &__now {
+    background: #96c11f;
+    padding: 30px 20px;
+    color: #ffffff;
+    @include museo100();
+    font-size: 22px;
+    line-height: 25px;
+    position: relative;
+    text-align: center;
+
+    h2 {
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: $tablet-portrait) {
+
+
+}
+
+@media (min-width: $tablet-landscape) {
+
+  .join-project{
+
+    &__now{
+      padding: 40px 300px 40px 80px;
+      font-size: 36px;
+      line-height: 47px;
+      text-align: left;
+
+      h2{
+        margin-bottom: 0;
+      }
+      .btn{
+        position: absolute;
+        right: 80px;
+        top: 37px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+
+
+}
+
+@media (min-width: $desktop-wide) {
+
+
+}
+
+@media (min-width: $desktop-full) {
+
+  .join-project {
+
+    .treasury__grid-title {
+      bottom: 58px;
+      left: 54px;
+
+      h2 {
+        font-size: 47px;
+      }
+    }
+    .treasury__grid-card_big .treasury__grid-title,
+    .treasury__grid-card_long .treasury__grid-title {
+      right: 253px;
+    }
+    .treasury__grid-card_big a,
+    .treasury__grid-card_long a {
+      margin-top: -41px;
+    }
+    &__now {
+      padding: 99px 600px 100px 373px;
+      font-size: 48px;
+      line-height: 55px;
+
+      .btn {
+        right: 380px;
+        top: 100px;
+      }
+    }
+  }
+  .join-project
+  .join-project__now
+  .join-project
+  .join-project .treasury__grid-title{
+
+  }
+
+
+}
+

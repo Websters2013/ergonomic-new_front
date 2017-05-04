@@ -28,9 +28,6 @@
         display: none;
         width: 49%;
       }
-      //.map-container__place {
-      //  margin: 0 0 0 10px;
-      //}
       .map-container__place{
         margin: 0 0 0 86px;
       }
@@ -101,11 +98,6 @@
 .map {
   height: 400px;
   width: 100%;
-}
-
-@media (min-width: $tablet-portrait) {
-
-
 }
 
 @media (min-width: $tablet-landscape) {
@@ -193,16 +185,6 @@
   .map {
     height: 581px;
   }
-}
-
-@media (min-width: $desktop) {
-
-
-}
-
-@media (min-width: $desktop-wide) {
-
-
 }
 
 @media (min-width: $desktop-full) {

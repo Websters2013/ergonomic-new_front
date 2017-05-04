@@ -7,6 +7,8 @@
 
     var Example = function (obj) {
 
+        console.log('example');
+
         //private properties
         var _self = this,
             _images = obj.find( 'img' ),

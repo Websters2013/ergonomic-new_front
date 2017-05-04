@@ -28,7 +28,7 @@ var paths = {
             dist: 'alvarez-case.min.js',
             contains: [
                 'app/js/jquery.paralax.js',
-                'app/js/js/jquery.example.js',
+                'app/js/jquery.example.js',
                 'app/js/jquery.inner-paralax.js'
             ]
         },

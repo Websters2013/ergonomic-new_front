@@ -1,0 +1,159 @@
+
+.facilities {
+  position: relative;
+  background: url("../img/facilities-bg.jpg") no-repeat bottom #307bf7;
+  padding: 20px 15px 140px;
+  background-size: contain;
+
+  &__items {
+    position: relative;
+    overflow: hidden;
+    padding: 30px 0 0;
+    z-index: 1;
+  }
+  &__grid-logo {
+    margin: 0 auto;
+    max-width: 402px;
+  }
+  &__ob-screen {
+    margin: 0 auto;
+    max-width: 745px;
+  }
+  &__grid-logo img,
+  &__ob-screen img{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  &__text {
+    padding: 40px 0 0;
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 18px;
+    line-height: 21px;
+
+    img {
+      display: block;
+      margin: 0 0 20px;
+    }
+    h2 {
+      font-size: 26px;
+      line-height: 29px;
+      @include museo500();
+      margin: 0 0 20px;
+      font-weight: normal;
+    }
+    ul {
+      @include proxima-light();
+      color: rgba(255,255,255,0.6);
+
+      li {
+        position: relative;
+        padding: 0 0 0 27px;
+        margin: 0 0 15px;
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 6px;
+          left: 1px;
+          width: 4px;
+          height: 4px;
+          border-radius: 5px;
+          border: 2px solid #fff;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .facilities{
+    text-align: center;
+
+    &__text {
+      padding: 40px 0;
+
+      img{
+        margin: 0 auto 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-landscape) {
+
+  .facilities {
+    padding: 0 0 374px;
+    text-align: left;
+
+    &__text {
+      padding: 21px 22px 0;
+      font-size: 20px;
+      line-height: 23px;
+    }
+    &__items {
+      display: table;
+      width: 100%;
+      padding: 80px 0;
+
+      &:nth-child(2){
+        text-align: center;
+      }
+      >div {
+        display: table-cell;
+        width: 50%;
+        vertical-align: middle;
+      }
+    }
+    &__grid-logo {
+      margin: 0 17.6% 0 0;
+      display: inline-block;
+      vertical-align: top;
+      max-width: 402px;
+    }
+    &__ob-screen {
+      display: inline-block;
+      vertical-align: top;
+      max-width: 745px;
+      border-radius: 0 7px 7px 0;
+      overflow: hidden;
+    }
+    &__text {
+
+      h2 {
+        font-size: 30px;
+        line-height: 34px;
+        margin: 0 0 31px;
+      }
+      ul {
+
+        li {
+          margin: 0 0 21px;
+        }
+      }
+      img {
+        margin: 0 0 35px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+
+
+}
+
+@media (min-width: $desktop-wide) {
+
+
+}
+
+@media (min-width: $desktop-full) {
+
+
+}
+

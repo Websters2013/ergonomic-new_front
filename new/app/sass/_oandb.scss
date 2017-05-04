@@ -1,0 +1,453 @@
+
+.ob-services {
+  background: #fff;
+  padding-bottom: 40px;
+  padding-top: 200px;
+
+  h2{
+    font-size: 36px;
+    line-height: 39px;
+    @include museo500();
+    color: #222222;
+    font-weight: normal;
+    text-align: center;
+    padding: 0 15px;      max-width: 1170px;
+    margin: 0 auto 31px;
+  }
+  > img {
+    display: block;
+    margin: 0 auto 54px;
+  }
+  &__screen {
+    max-width: 1170px;
+    margin: 0 auto;
+
+    > div {
+      background: url("../img/ob-services__screen_2.png") no-repeat center;
+      background-size: contain;
+      position: relative;
+      padding-bottom: 64%;
+      z-index: 2;
+    }
+    img {
+      border: 2px solid #000;
+      border-radius: 3px;
+      position: absolute;
+      left: 7.6068%;
+      right: 7.6068%;
+      top: 11.5118%;
+      bottom: 10.8183%;
+      width: 84.7864%;
+      height: 74.6699%;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      background: url("../img/ob-services__screen__shadow.png") no-repeat center;
+      background-size: contain;
+      bottom: -2%;
+      left: -5%;
+      right: -5%;
+      padding-bottom: 5%;
+    }
+  }
+  &__txt {
+    max-width: 630px;
+    padding: 0 15px;
+    text-align: left;
+    margin: 0 auto 40px;
+
+    p {
+      @include proxima-light();
+      font-size: 20px;
+      color: #8d8d8d;
+      line-height: 38px;
+      margin-top: 38px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+      strong {
+        font-size: 24px;
+        color: #222;
+        @include proxima-regular();
+        line-height: 42px;
+      }
+    }
+  }
+  &__plan {
+    padding: 0 30px;
+    max-width: 1170px;
+    margin: 0 auto;
+
+    li {
+      display: block;
+      @include proxima-light();
+      color: #222;
+      font-size: 21px;
+      margin-bottom: 20px;
+
+      span {
+        display: inline-block;
+        position: relative;
+        padding: 0 0 0 28px;
+
+        &:before {
+          content: '';
+          position: absolute;
+          width: 4px;
+          height: 4px;
+          border-radius: 5px;
+          border: 2px solid #307bf7;
+          left: 0;
+          top: 5px;
+        }
+      }
+    }
+  }
+  &__book {
+    margin: 0 auto;
+    max-width: 1640px;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: -290px;
+      left: 50%;
+      margin-left: -125px;
+      width: 250px;
+      height: auto;
+    }
+  }
+}
+
+.ob-vision {
+  background: #101b2c;
+  padding: 40px 15px;
+
+  &__inner {
+    overflow: hidden;
+    margin: 0 0 60px 0;
+  }
+  &__pic {
+    display: none;
+  }
+  &__info {
+    display: inline-block;
+    vertical-align: top;
+    @include proxima-light();
+    margin-bottom: 40px;
+
+    span {
+      display: block;
+      font-size: 25px;
+      line-height: 29px;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+    p {
+      display: block;
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 27px;
+      color: #909397;
+    }
+    .btn {
+      display: block;
+      width: 149px;
+      height: 54px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 0;
+
+      span {
+        @include museo500();
+        font-size: 14px;
+        line-height: 56px;
+        color: #fff;
+        text-transform: none;
+      }
+    }
+  }
+  &__quote {
+    position: relative;
+    min-width: 290px;
+    max-width: 600px;
+    @include proxima-light();
+    color: #909397;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 auto;
+    text-align: center;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background: url(../img/quote-buble.png) no-repeat;
+      background-size: cover;
+      left: 50%;
+      top: -60px;
+      margin: 0 0 0 -25px;
+    }
+    span {
+      color: #fff;
+      display: block;
+    }
+    div {
+      @include proxima-regular();
+      font-size: 15px;
+      color: #909397;
+      margin: 35px 0 0;
+
+      span {
+        display: inline;
+        @include proxima-bold();
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .ob-services {
+
+    &__txt {
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-bottom: 146px;
+    }
+  }
+  .ob-vision {
+
+    &__info {
+      width: 725px;
+      margin: 0 auto 40px;
+
+      .btn {
+        margin: 50px auto 20px;
+
+        span {
+          @include museo500();
+          font-size: 14px;
+          line-height: 56px;
+          color: #fff;
+          text-transform: none;
+        }
+      }
+    }
+    &__quote {
+
+      &:before {
+        top: -65px;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-landscape) {
+
+  .ob-services {
+    padding-bottom: 93px;
+    padding-top: 284px;
+
+    .tabs {
+
+      &:before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        bottom: -16px;
+        left: 0;
+        height: 70px;
+        width: 100%;
+        background: url("../img/ob-services__screen__shadow.png") no-repeat center;
+        background-size: contain;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        top: 109px;
+        bottom: 20px;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        background: url("../img/ob-services__screen_2.png") no-repeat center;
+        background-size: contain;
+      }
+    }
+    &__screen {
+
+      &:after {
+        display: none;
+      }
+      > div {
+        background: none;
+      }
+    }
+    &__plan {
+      text-align: center;
+
+      li {
+        display: inline-block;
+        margin: 0 0 0 39px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+    &__book {
+
+      img {
+        position: absolute;
+        width: 582px;
+        height: auto;
+        top: -622px;
+        left: 145px;
+      }
+    }
+  }
+  .ob-vision {
+    padding: 87px 0;
+
+    &__pic {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+
+      img {
+        width: 450px;
+      }
+    }
+    &__info {
+      width: 442px;
+      margin: 0 auto 92px;
+
+      span {
+        white-space: pre-line;
+      }
+      .btn {
+        margin: 32px 0 0;
+
+        span {
+          @include museo500();
+          font-size: 14px;
+          line-height: 51px;
+          color: #fff;
+        }
+      }
+    }
+    &__quote {
+
+      &:before {
+        top: -80px;
+      }
+    }
+  }
+}
+@media (min-width: $desktop) {
+
+  .ob-services {
+
+    .tabs {
+
+      &:after {
+        left: 50%;
+        width: 1170px;
+        margin-left: -585px;
+      }
+      &:before {
+        left: 50%;
+        width: 1170px;
+        margin-left: -585px;
+      }
+    }
+  }
+  /*------------ob-vision-----------*/
+  .ob-vision__pic img {
+    width: 590px;
+  }
+  .ob-vision__info {
+    width: 490px;
+  }
+  .ob-vision__info span {
+    white-space: pre-line;
+  }
+  /*------------/ob-vision-----------*/
+}
+
+@media (min-width: $desktop-wide) {
+
+  .ob-vision {
+
+    &__pic img {
+      width: 622px;
+    }
+    &__info {
+      width: 490px;
+
+      span {
+        white-space: pre-line;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-full) {
+
+  .ob-vision {
+    padding: 153px 0 103px;
+
+    &__inner {
+      margin: 0 0 162px 0;
+    }
+    &__pic {
+      width: 50.9%;
+
+      img {
+        width: 745px;
+
+      }
+    }
+    &__info {
+      width: 557px;
+      margin-top: -2px;
+
+      span {
+        font-size: 30px;
+        line-height: 42px;
+        margin-bottom: 35px;
+        white-space: pre-line;
+      }
+      p {
+        margin-bottom: 35px;
+        font-size: 20px;
+        line-height: 36px;
+      }
+      .btn {
+        margin: 48px 0 0 2px;
+        padding: 0 0 0 6px;
+      }
+    }
+    &__quote {
+      max-width: 850px;
+      font-size: 30px;
+      line-height: 44px;
+      left: 4px;
+
+      &:before {
+        top: -94px;
+        margin: 0 0 0 -21px;
+      }
+      div {
+        font-size: 17px;
+        margin: 32px 0 0;
+      }
+    }
+  }
+}
+
