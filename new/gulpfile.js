@@ -70,6 +70,7 @@ var paths = {
             dist: 'launch-a-project.min.js',
             contains: [
                 'app/js/jquery.inner-paralax.js',
+                'app/js/jquery.select.js',
                 'app/js/jquery.paralax.js'
             ]
         },

@@ -1,0 +1,40 @@
+.paralax {
+  display: none;
+}
+
+@media (min-width: $tablet-portrait) {
+
+
+}
+
+@media (min-width: $tablet-landscape) {
+
+  .paralax {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: block;
+
+    > img {
+      position: absolute;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+
+
+}
+
+@media (min-width: $desktop-wide) {
+
+
+}
+
+@media (min-width: $desktop-full) {
+
+
+}
+

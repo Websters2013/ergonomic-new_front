@@ -273,8 +273,6 @@ a.btn {
 }
 /* --------------- /btn --------------- */
 
-
-
 /* --------------- triangle --------------- */
 .triangle__item {
   position: absolute;
@@ -288,9 +286,7 @@ a.btn {
 /* --------------- /triangle --------------- */
 
 /* --------------- paralax --------------- */
-.paralax {
-  display: none;
-}
+
 .weinvest-button {
   padding-bottom: 75px;
   padding-top: 75px;
@@ -794,145 +790,6 @@ input#amount {
 
 
 
-/* --------------- we-invest --------------- */
-.we-invest{
-  font-family: "proximanova-light", sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  color: #999999;
-  position: relative;
-  padding: 30px 0 220px;
-}
-.we-invest:after{
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  background: url("../img/browse.jpg") no-repeat;
-  background-size: cover;
-  width: 203px;
-  height: 207px;
-  margin-left: -101.5px;
-}
-.we-invest p{
-  max-width: 770px;
-  text-align: center;
-  margin: 0 auto;
-  padding: 0 20px;
-  position: relative;
-  z-index: 3;
-}
-/* --------------- /we-invest --------------- */
-
-/* --------------- branding-identity --------------- */
-.branding-identity{
-  font-family: "proximanova-thin", sans-serif;
-  color: #999999;
-  font-size: 14px;
-  line-height: 30px;
-  padding: 30px 0;
-}
-.branding-identity__items{
-  position: relative;
-  overflow: hidden;
-}
-.branding-identity__items>div{
-  float: left;
-  width: 100%;
-}
-.branding-identity__text{
-  padding: 30px 20px;
-}
-.branding-identity__text h3{
-  font-weight: 400;
-  color: #ee4346;
-  font-size: 18px;
-  line-height: 30px;
-  margin-bottom: 10px;
-}
-/* --------------- /branding-identity --------------- */
-
-/* --------------- logo-design --------------- */
-.logo-design{
-  position: relative;
-  padding: 30px 20px;
-}
-.logo-design .site__caption{
-  font-size: 23px;
-  line-height: 26px;
-  color: #ee4346;
-}
-.logo-design img{
-  display: block;
-  margin: 0 auto;
-  width: 280px;
-  height: auto;
-}
-/* --------------- /logo-design --------------- */
-
-/* --------------- /logo-design --------------- */
-.website{
-  background: #2a2a32;
-  position: relative;
-  padding: 30px 20px;
-}
-.website:before,
-.website:after{
-  content: '';
-  position: absolute;
-  bottom: -270px;
-  left: 25px;
-  background: url("../img/iphone6.png") no-repeat;
-  width: 338px;
-  height: 630px;
-  background-size: cover !important;
-  display: none;
-}
-.website:after{
-  background: url("../img/ipad.png") no-repeat;
-  width: 636px;
-  height: 452px;
-  bottom: -294px;
-  left: auto;
-  right: 0;
-}
-.website .site__caption{
-  color: #fff;
-  font-size: 23px;
-  line-height: 26px;
-}
-.website__items{
-  position: relative;
-  overflow: hidden;
-  color: #999999;
-  font-size: 14px;
-  line-height: 22px;
-  font-family: "proximanova-regular";
-  margin: 0 auto;
-}
-.website__items>div{
-  float: left;
-  width: 100%;
-  padding: 0 0 0 85px;
-  margin-bottom: 15px;
-}
-.website__items>div:nth-child(1){
-  background: url("../img/website-decor1.png") no-repeat 15px top;
-  background-size: 50px 50px;
-}
-.website__items>div:nth-child(2){
-  background: url("../img/website-decor2.png") no-repeat 16px 5px;
-  background-size: 50px 44px;
-}
-.website__items h3{
-  font-weight: 400;
-  color: #fff;
-  margin: 0 0 10px;
-  font-size: 18px;
-  line-height: 26px;
-  font-family: "proximanova-bold";
-}
-/* --------------- /logo-design --------------- */
 
 /* --------------- synchronized --------------- */
 .synchronized{
@@ -1866,20 +1723,6 @@ input#amount {
   }
   /* --------------- /from-archive --------------- */
 
-
-
-  /* --------------- logo-design --------------- */
-  .logo-design img{
-    width: 400px;
-  }
-  /* --------------- /logo-design --------------- */
-
-
-
-
-
-
-
   /*-------------landing------------*/
   .landing {
     background: #f7f7f7;
@@ -1932,29 +1775,6 @@ input#amount {
     padding: 0px;
   }
 
-
-
-  /* --------------- branding-identity --------------- */
-  .branding-identity{
-    font-size: 16px;
-    line-height: 25px;
-    padding: 70px 0 50px;
-  }
-  .branding-identity__text h3{
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 20px;
-  }
-  .branding-identity__items>div{
-    width: 50%;
-  }
-  .branding-identity__text{
-    padding: 0 30px 0;
-  }
-  /* --------------- /branding-identity --------------- */
-
-
-
   /* --------------- tabs --------------- */
   .tabs{
     position: relative;
@@ -1986,9 +1806,6 @@ input#amount {
     margin: 0;
   }
   /* --------------- /tabs --------------- */
-
-
-
 
 
   /*-------------landing------------*/
@@ -2077,19 +1894,7 @@ input#amount {
 }
 @media (min-width: 1025px) {
 
-  /* --------------- paralax --------------- */
-  .paralax {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    display: block;
-  }
-  .paralax > img {
-    position: absolute;
-  }
-  /* --------------- /paralax --------------- */
+
 
 
   /* --------------- project-order ---------------- */
@@ -2140,41 +1945,8 @@ input#amount {
   }
   /* ---------------- /from-archive --------------- */
 
-  /* --------------- we-invest --------------- */
-  .we-invest{
-    font-size: 24px;
-    line-height: 44px;
-    padding: 168px 0 596px;
-    background: url("../img/we-invest.jpg") no-repeat left bottom;
-  }
-  .we-invest p{
-    padding: 0 66px;
-  }
-  .we-invest .paralax img:nth-child(1) {
-    right: 393px;
-    top: 274px;
-    z-index: 1;
-  }
-  .we-invest .paralax img:nth-child(2) {
-    top: 551px;
-    right: 263px;
-    z-index: 3;
-  }
-  .we-invest .paralax img:nth-child(3) {
-    right: 433px;
-    top: 631px;
-    z-index: 2;
-  }
-  .we-invest:after{
-    left: 0;
-    bottom: -9px;
-    width: 486px;
-    height: 495px;
-    margin-left: 0;
-  }
-  /* --------------- /we-invest --------------- */
 
-  /* --------------- branding-identity --------------- */
+
   .swiper-container .swiper-pagination{
     left: 40px;
   }
@@ -2185,67 +1957,10 @@ input#amount {
     border-radius: 14px;
     border: 2px solid #e93838;
   }
-  /* --------------- /branding-identity --------------- */
 
-  /* --------------- logo-design --------------- */
-  .logo-design{
-    padding: 114px 20px 181px;
-  }
-  .logo-design .site__caption{
-    font-size: 30px;
-    line-height: 34px;
-    margin-bottom: 169px;
-  }
-  .logo-design .site__caption span {
-    font-size: 80.666667%;
-    padding-top: 6px;
-  }
-  .logo-design img{
-    width: 540px;
-  }
-  /* --------------- /logo-design --------------- */
 
-  /* --------------- /logo-design --------------- */
-  .website{
-    padding: 115px 0 380px;
-    margin: 0 0 281px;;
-  }
-  .website .site__caption{
-    font-size: 30px;
-    line-height: 34px;
-    margin-bottom: 171px;
-  }
-  .website .site__caption span {
-    font-size: 80.666667%;
-    padding-top: 6px;
-  }
-  .website__items{
-    font-size: 18px;
-    line-height: 30px;
-    max-width: 90%;
-  }
-  .website__items>div{
-    width: 50%;
-    padding: 3px 60px 0 144px;
-    margin-bottom: 0;
-    min-height: 100px;
-  }
-  .website__items>div:nth-child(1){
-    background-size: 100px 100px;
-  }
-  .website__items>div:nth-child(2){
-    background-size: 100px 88px;
-  }
-  .website__items h3{
-    margin: 0 0 7px;
-    font-size: 24px;
-    line-height: 30px;
-  }
-  .website:before,
-  .website:after{
-    display: block;
-  }
-  /* --------------- /logo-design --------------- */
+
+
 
   /* --------------- synchronized --------------- */
   .synchronized{
@@ -2282,26 +1997,6 @@ input#amount {
 
 
 
-
-
-  /* --------------- branding-identity --------------- */
-  .branding-identity{
-    font-size: 20px;
-    line-height: 40px;
-    padding: 174px 0 59px;
-  }
-  .branding-identity__text h3{
-    font-size: 24px;
-    line-height: 40px;
-    margin-bottom: 35px;
-  }
-  .branding-identity__text{
-    padding: 93px 50px 0;
-  }
-  /* --------------- /branding-identity --------------- */
-
-
-
 }
 @media (min-width: 1170px) {
 
@@ -2314,21 +2009,6 @@ input#amount {
 @media (min-width: 1280px) {
 
 
-
-  .website:before,
-  .website:after{
-    width: 374px;
-    height: 701px;
-    left: 10px;
-    bottom: -357px;
-  }
-  .website:after{
-    width: 890px;
-    height: 633px;
-    bottom: -411px;
-    left: auto;
-    right: 0;
-  }
 
 
 
@@ -2350,57 +2030,12 @@ input#amount {
 }
 @media (min-width: 1600px) {
 
-  .website:before,
-  .website:after{
-    width: 374px;
-    height: 701px;
-    left: 50px;
-    bottom: -357px;
-  }
-  .website:after{
-    width: 1215px;
-    height: 864px;
-    bottom: -559px;
-    left: auto;
-    right: 0;
-  }
+
 
 
 }
 @media (min-width: 1920px) {
 
-
-
-  /* --------------- branding-identity --------------- */
-  .branding-identity__text{
-    padding: 93px 0 0 115px;
-    width: 55%;
-  }
-  /* --------------- /branding-identity --------------- */
-
-  /* --------------- website --------------- */
-  .website{
-    padding: 174px 0 487px;
-    margin: 0 0 560px;
-  }
-  .website__items{
-    max-width: 62.5%;
-  }
-  .website:before,
-  .website:after{
-    width: 374px;
-    height: 701px;
-    left: 338px;
-    bottom: -357px;
-  }
-  .website:after{
-    width: 1215px;
-    height: 864px;
-    bottom: -559px;
-    left: auto;
-    right: 0;
-  }
-  /* --------------- /website --------------- */
 
   /* --------------- synchronized --------------- */
   .synchronized__sites{
@@ -2420,10 +2055,6 @@ input#amount {
     height: auto;
   }
   /* --------------- /synchronized --------------- */
-
-
-
-
 
   /*-------------landing------------*/
   .landing__team {

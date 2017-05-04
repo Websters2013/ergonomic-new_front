@@ -1,0 +1,81 @@
+
+.branding-identity{
+  @include proxima-thin();
+  color: #999999;
+  font-size: 14px;
+  line-height: 30px;
+  padding: 30px 0;
+
+  &__items{
+    position: relative;
+    overflow: hidden;
+
+    >div{
+      float: left;
+      width: 100%;
+    }
+  }
+  &__text{
+    padding: 30px 20px;
+
+    h3{
+      font-weight: 400;
+      color: #ee4346;
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (min-width: $tablet-portrait) {
+
+
+}
+
+@media (min-width: $tablet-landscape) {
+
+  .branding-identity{
+    font-size: 20px;
+    line-height: 40px;
+    padding: 174px 0 59px;
+
+    &__text {
+      padding: 93px 50px 0;
+
+      h3{
+        font-size: 24px;
+        line-height: 40px;
+        margin-bottom: 35px;
+      }
+    }
+    &__items {
+
+      >div{
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+
+
+}
+
+@media (min-width: $desktop-wide) {
+
+
+}
+
+@media (min-width: $desktop-full) {
+
+  .branding-identity {
+
+    &__text{
+      padding: 93px 0 0 115px;
+      width: 55%;
+    }
+  }
+}
+

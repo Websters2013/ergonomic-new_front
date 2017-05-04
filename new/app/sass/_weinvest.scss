@@ -1,0 +1,86 @@
+.we-invest{
+  @include proxima-light();
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+  position: relative;
+  padding: 30px 0 220px;
+
+  &:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    background: url("../img/browse.jpg") no-repeat;
+    background-size: cover;
+    width: 203px;
+    height: 207px;
+    margin-left: -101.5px;
+  }
+  p{
+    max-width: 770px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 3;
+  }
+}
+
+@media (min-width: $tablet-portrait) {
+
+
+}
+
+@media (min-width: $tablet-landscape) {
+
+  /* --------------- we-invest --------------- */
+  .we-invest{
+    font-size: 24px;
+    line-height: 44px;
+    padding: 168px 0 596px;
+    background: url("../img/we-invest.jpg") no-repeat left bottom;
+
+    p{
+      padding: 0 66px;
+    }
+    .paralax img:nth-child(1) {
+      right: 393px;
+      top: 274px;
+      z-index: 1;
+    }
+    .paralax img:nth-child(2) {
+      top: 551px;
+      right: 263px;
+      z-index: 3;
+    }
+    .paralax img:nth-child(3) {
+      right: 433px;
+      top: 631px;
+      z-index: 2;
+    }
+    &:after{
+      left: 0;
+      bottom: -9px;
+      width: 486px;
+      height: 495px;
+      margin-left: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+
+
+}
+
+@media (min-width: $desktop-wide) {
+
+
+}
+
+@media (min-width: $desktop-full) {
+
+
+}
+

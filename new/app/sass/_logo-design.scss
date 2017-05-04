@@ -1,0 +1,47 @@
+.logo-design{
+  position: relative;
+  padding: 30px 20px;
+
+  .site__caption{
+    font-size: 23px;
+    line-height: 26px;
+    color: #ee4346;
+  }
+  img{
+    display: block;
+    margin: 0 auto;
+    width: 280px;
+    height: auto;
+  }
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .logo-design {
+
+    img{
+      width: 400px;
+    }
+  }
+}
+
+@media (min-width: $tablet-landscape) {
+
+  .logo-design{
+    padding: 114px 20px 181px;
+
+    .site__caption{
+      font-size: 30px;
+      line-height: 34px;
+      margin-bottom: 169px;
+
+      span {
+        font-size: 80.666667%;
+        padding-top: 6px;
+      }
+    }
+    img{
+      width: 540px;
+    }
+  }
+}
